@@ -1,0 +1,33 @@
+\begin{table*}[!t]
+\centering
+\scriptsize
+\caption{STable 20: Experiment completion matrix.}
+\label{tab:supp_completion_matrix}
+\begin{tabular}{llllll}
+\toprule
+Priority & Experiment & Status & Artifact & Artifact exists & Notes \\
+\midrule
+P0 & Frozen leakage-audited benchmark splits & done & results/tkde\_benchmark\_split\_manifest.csv & True & nan \\
+P0 & ACNet target-family/cold-ligand hard OOD & done & results/acnet\_target\_family\_best\_joint\_seed0\_4\_allfold\_n10\_summary.csv & True & nan \\
+P0 & MoleculeACE external target-family controls & done & results/moleculeace\_target\_family\_pairs\_seed0\_4\_n120\_summary.csv & True & nan \\
+P0 & MTPNet same-source split and cold-target controls & done & results/mtpnet\_cold\_target\_analysis.md & True & nan \\
+P0 & Raw ChEMBL source/temporal benchmark & done & results/chembl\_raw\_source\_temporal\_pairs\_seed0\_4\_n40\_summary.csv & True & nan \\
+P0 & Raw BindingDB source-purged benchmark & done & results/bindingdb\_raw\_source\_pairs\_seed0\_4\_n80\_summary.csv & True & nan \\
+P0 & LoHi/DataSAIL-style leakage-aware split & done & results/tkde\_lohi\_leakage\_splits\_seed0\_2\_summary.csv & True & nan \\
+P0 & Raw external selective/conformal reliability & done & results/tkde\_raw\_reliability\_seed0\_2\_conformal\_summary.csv & True & nan \\
+P0 & Cross-database transfer & done & results/tkde\_remaining\_p0\_p1\_seed0\_2\_summary.csv & True & nan \\
+P0 & Prospective temporal validation & done & results/tkde\_remaining\_p0\_p1\_seed0\_2\_summary.csv & True & nan \\
+P0 & Top-k enrichment and BEDROC utility & done & results/tkde\_remaining\_p0\_p1\_seed0\_2\_summary.csv & True & nan \\
+P0 & Statistical effect sizes and multiplicity & done & results/tkde\_statistical\_effects\_audit.csv & True & nan \\
+P1 & Noise/censoring sensitivity & done & results/tkde\_noise\_sensitivity\_seed0\_2\_summary.csv & True & nan \\
+P1 & Non-neural baseline stress tests & done & results/tkde\_non\_neural\_baselines\_chembl\_seed0\_4\_summary.csv & True & nan \\
+P1 & Neural and shuffled target controls & done & results/acnet\_target\_family\_neural\_controls\_full25\_summary.csv & True & nan \\
+P1 & Target/assay pretraining controls & done & results/acnet\_target\_assay\_strengthening\_current\_no\_shufpairs\_summary.csv & True & nan \\
+P1 & Success/failure case studies & done & results/tkde\_failure\_case\_studies.csv & True & nan \\
+P2 & Leaderboard snapshot and schema & done & results/tkde\_leaderboard\_snapshot.csv & True & nan \\
+P2 & Runtime and scalability & done & results/tkde\_runtime\_scalability.csv & True & nan \\
+P2 & Official DataSAIL optimizer exact split & done & results/official\_datasail\_exact\_split.csv & True & official DataSAIL 1.3.0 C2/ECFP source-purged split audit completed in Python 3.12; not-selected interactions are excluded from model train/test and BindingDB fold2 is skipped by the minimum-test threshold \\
+P2 & Official DataSAIL multi-cluster sensitivity & done & results/tkde\_experiment\_tables\_2026\_05\_20/table\_17\_official\_datasail\_multicluster\_sensitivity.csv & True & clusters 20 and 40 support the BindingDB-positive/ChEMBL-boundary conclusion while clusters 80 returns no assignment even after a 300-second retry \\
+\bottomrule
+\end{tabular}
+\end{table*}

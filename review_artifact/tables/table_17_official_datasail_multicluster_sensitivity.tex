@@ -1,0 +1,30 @@
+\begin{table*}[!t]
+\centering
+\scriptsize
+\caption{STable 22: Official DataSAIL multi-cluster sensitivity audit. Clusters=20 and 40 are evaluated with the same source-purged C2/ECFP protocol; clusters=80 is reported as a solver-boundary configuration because official DataSAIL returned no C2 assignment even after a 300-second retry.}
+\label{tab:s22}
+\setlength{\tabcolsep}{2.6pt}
+\renewcommand{\arraystretch}{1.08}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{rrlllrrrlllllll}
+\toprule
+Clusters & Max sec & Source & Status & Variant & Folds & Train & Test & ROC-AUC & PR-AUC & MCC & $\Delta$ ROC & $\Delta$ PR & $\Delta$ MCC & Notes \\
+\midrule
+20 & 120 & BindingDB raw & success & ECFP abs-diff XGB & 5 & 2574 & 687 & 0.491 $\pm$ 0.036 & 0.345 $\pm$ 0.037 & -0.002 $\pm$ 0.054 & -- & -- & -- & source-purged C2/ECFP \\
+20 & 120 & BindingDB raw & success & PC-CFRL rich-diff & 5 & 2574 & 687 & 0.581 $\pm$ 0.023 & 0.413 $\pm$ 0.034 & 0.114 $\pm$ 0.043 & +0.090 & +0.068 & +0.116 & source-purged C2/ECFP \\
+20 & 120 & BindingDB raw & success & PC-CFRL scalar-only & 5 & 2574 & 687 & 0.599 $\pm$ 0.038 & 0.421 $\pm$ 0.061 & 0.154 $\pm$ 0.073 & +0.109 & +0.076 & +0.156 & source-purged C2/ECFP \\
+20 & 120 & ChEMBL raw & success & ECFP abs-diff XGB & 5 & 2595 & 662 & 0.511 $\pm$ 0.084 & 0.345 $\pm$ 0.182 & 0.001 $\pm$ 0.083 & -- & -- & -- & source-purged C2/ECFP \\
+20 & 120 & ChEMBL raw & success & PC-CFRL rich-diff & 5 & 2595 & 662 & 0.501 $\pm$ 0.090 & 0.340 $\pm$ 0.160 & 0.024 $\pm$ 0.096 & -0.010 & -0.006 & +0.022 & source-purged C2/ECFP \\
+20 & 120 & ChEMBL raw & success & PC-CFRL scalar-only & 5 & 2595 & 662 & 0.556 $\pm$ 0.073 & 0.359 $\pm$ 0.166 & 0.054 $\pm$ 0.079 & +0.045 & +0.013 & +0.052 & source-purged C2/ECFP \\
+40 & 120 & ChEMBL raw & success & ECFP abs-diff XGB & 5 & 1786 & 462 & 0.598 $\pm$ 0.039 & 0.476 $\pm$ 0.101 & 0.168 $\pm$ 0.079 & -- & -- & -- & source-purged C2/ECFP \\
+40 & 120 & ChEMBL raw & success & PC-CFRL rich-diff & 5 & 1786 & 462 & 0.582 $\pm$ 0.114 & 0.480 $\pm$ 0.132 & 0.071 $\pm$ 0.188 & -0.016 & +0.003 & -0.098 & source-purged C2/ECFP \\
+40 & 120 & ChEMBL raw & success & PC-CFRL scalar-only & 5 & 1786 & 462 & 0.569 $\pm$ 0.085 & 0.461 $\pm$ 0.169 & 0.084 $\pm$ 0.165 & -0.029 & -0.015 & -0.084 & source-purged C2/ECFP \\
+40 & 120 & BindingDB raw & success & ECFP abs-diff XGB & 4 & 2722 & 952 & 0.463 $\pm$ 0.048 & 0.312 $\pm$ 0.137 & -0.070 $\pm$ 0.095 & -- & -- & -- & source-purged C2/ECFP \\
+40 & 120 & BindingDB raw & success & PC-CFRL rich-diff & 4 & 2722 & 952 & 0.610 $\pm$ 0.045 & 0.429 $\pm$ 0.120 & 0.154 $\pm$ 0.071 & +0.147 & +0.117 & +0.224 & source-purged C2/ECFP \\
+40 & 120 & BindingDB raw & success & PC-CFRL scalar-only & 4 & 2722 & 952 & 0.601 $\pm$ 0.065 & 0.416 $\pm$ 0.116 & 0.127 $\pm$ 0.073 & +0.139 & +0.104 & +0.197 & source-purged C2/ECFP \\
+80 & 300 & ChEMBL raw & solver\_failed & -- & 0 & -- & -- & -- & -- & -- & -- & -- & -- & official DataSAIL C2 returned no assignment at 80 clusters \\
+80 & 300 & BindingDB raw & solver\_failed & -- & 0 & -- & -- & -- & -- & -- & -- & -- & -- & source-specific rerun also returned no assignment at 80 clusters \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}

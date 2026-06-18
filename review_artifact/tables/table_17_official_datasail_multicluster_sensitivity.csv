@@ -1,0 +1,15 @@
+Clusters,Max sec,Source,Status,Variant,Folds,Train,Test,ROC-AUC,PR-AUC,MCC,Delta ROC,Delta PR,Delta MCC,Notes
+20,120,BindingDB raw,success,ECFP abs-diff XGB,5,2574,687,0.491 +/- 0.036,0.345 +/- 0.037,-0.002 +/- 0.054,--,--,--,source-purged C2/ECFP
+20,120,BindingDB raw,success,PC-CFRL rich-diff,5,2574,687,0.581 +/- 0.023,0.413 +/- 0.034,0.114 +/- 0.043,+0.090,+0.068,+0.116,source-purged C2/ECFP
+20,120,BindingDB raw,success,PC-CFRL scalar-only,5,2574,687,0.599 +/- 0.038,0.421 +/- 0.061,0.154 +/- 0.073,+0.109,+0.076,+0.156,source-purged C2/ECFP
+20,120,ChEMBL raw,success,ECFP abs-diff XGB,5,2595,662,0.511 +/- 0.084,0.345 +/- 0.182,0.001 +/- 0.083,--,--,--,source-purged C2/ECFP
+20,120,ChEMBL raw,success,PC-CFRL rich-diff,5,2595,662,0.501 +/- 0.090,0.340 +/- 0.160,0.024 +/- 0.096,-0.010,-0.006,+0.022,source-purged C2/ECFP
+20,120,ChEMBL raw,success,PC-CFRL scalar-only,5,2595,662,0.556 +/- 0.073,0.359 +/- 0.166,0.054 +/- 0.079,+0.045,+0.013,+0.052,source-purged C2/ECFP
+40,120,ChEMBL raw,success,ECFP abs-diff XGB,5,1786,462,0.598 +/- 0.039,0.476 +/- 0.101,0.168 +/- 0.079,--,--,--,source-purged C2/ECFP
+40,120,ChEMBL raw,success,PC-CFRL rich-diff,5,1786,462,0.582 +/- 0.114,0.480 +/- 0.132,0.071 +/- 0.188,-0.016,+0.003,-0.098,source-purged C2/ECFP
+40,120,ChEMBL raw,success,PC-CFRL scalar-only,5,1786,462,0.569 +/- 0.085,0.461 +/- 0.169,0.084 +/- 0.165,-0.029,-0.015,-0.084,source-purged C2/ECFP
+40,120,BindingDB raw,success,ECFP abs-diff XGB,4,2722,952,0.463 +/- 0.048,0.312 +/- 0.137,-0.070 +/- 0.095,--,--,--,source-purged C2/ECFP
+40,120,BindingDB raw,success,PC-CFRL rich-diff,4,2722,952,0.610 +/- 0.045,0.429 +/- 0.120,0.154 +/- 0.071,+0.147,+0.117,+0.224,source-purged C2/ECFP
+40,120,BindingDB raw,success,PC-CFRL scalar-only,4,2722,952,0.601 +/- 0.065,0.416 +/- 0.116,0.127 +/- 0.073,+0.139,+0.104,+0.197,source-purged C2/ECFP
+80,300,ChEMBL raw,solver_failed,--,0,--,--,--,--,--,--,--,--,official DataSAIL C2 returned no assignment at 80 clusters
+80,300,BindingDB raw,solver_failed,--,0,--,--,--,--,--,--,--,--,source-specific rerun also returned no assignment at 80 clusters

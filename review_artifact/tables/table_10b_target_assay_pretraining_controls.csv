@@ -1,0 +1,9 @@
+split_mode,variant,n_runs,roc_auc,pr_auc,mcc,balanced_accuracy
+target,external_profile_knn,7,0.6611 +/- 0.0081,0.2441 +/- 0.0084,0.1814 +/- 0.0058,0.6093 +/- 0.0058
+target,external_profile_knn_shuffled,7,0.6689 +/- 0.0101,0.2467 +/- 0.0120,0.1916 +/- 0.0064,0.6175 +/- 0.0070
+target,external_profile_mlp,2,0.6618 +/- 0.0001,0.2360 +/- 0.0075,0.1849 +/- 0.0118,0.6114 +/- 0.0108
+target,external_profile_mlp_shuffled,2,0.6650 +/- 0.0010,0.2460 +/- 0.0050,0.1926 +/- 0.0005,0.6191 +/- 0.0007
+target,rich_pair_only,32,0.6754 +/- 0.0065,0.2735 +/- 0.0234,0.1927 +/- 0.0066,0.6220 +/- 0.0054
+target,seq_random_projection,25,0.6750 +/- 0.0143,0.2831 +/- 0.0305,0.1927 +/- 0.0152,0.6238 +/- 0.0100
+target,target_embedding_concat,25,0.6777 +/- 0.0079,0.2827 +/- 0.0223,0.1937 +/- 0.0076,0.6243 +/- 0.0063
+target,target_embedding_concat_shuffled,25,0.6745 +/- 0.0078,0.2791 +/- 0.0215,0.1904 +/- 0.0078,0.6221 +/- 0.0061

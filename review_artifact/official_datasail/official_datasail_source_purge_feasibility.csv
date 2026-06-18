@@ -1,0 +1,11 @@
+source,fold,selected_train_before_source_purge,selected_train_after_source_purge,selected_test,source_purge_feasible
+chembl_raw,fold0,1779,1731,530,True
+chembl_raw,fold1,1373,1196,936,True
+chembl_raw,fold2,2239,2203,70,True
+chembl_raw,fold3,1668,1643,641,True
+chembl_raw,fold4,2177,2158,132,True
+bindingdb_raw,fold0,2124,1699,1707,True
+bindingdb_raw,fold1,3183,3110,648,True
+bindingdb_raw,fold2,3808,3792,23,False
+bindingdb_raw,fold3,2681,2575,1150,True
+bindingdb_raw,fold4,3528,3504,303,True

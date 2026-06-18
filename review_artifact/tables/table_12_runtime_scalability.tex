@@ -1,0 +1,24 @@
+\begin{longtable}{lrrrrrrrrrrrrrrrr}
+\caption{Runtime and scalability profile} \label{tab:table_12_runtime_scalability} \\
+\toprule
+source & sample\_fraction & n\_rows & n\_train & n\_test & train\_retention\_after\_purge & feature\_seconds & train\_seconds & predict\_seconds & max\_rss\_mb & roc\_auc & pr\_auc & balanced\_accuracy & f1 & mcc & brier & ece\_10 \\
+\midrule
+\endfirsthead
+\caption[]{Runtime and scalability profile} \\
+\toprule
+source & sample\_fraction & n\_rows & n\_train & n\_test & train\_retention\_after\_purge & feature\_seconds & train\_seconds & predict\_seconds & max\_rss\_mb & roc\_auc & pr\_auc & balanced\_accuracy & f1 & mcc & brier & ece\_10 \\
+\midrule
+\endhead
+\midrule
+\multicolumn{17}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+chembl\_raw & 0.250000 & 2971 & 2109 & 765 & 0.956000 & 2.725100 & 0.172300 & 0.001700 & 351.015600 & 0.524000 & 0.443900 & 0.535300 & 0.434100 & 0.072000 & 0.248700 & 0.081400 \\
+chembl\_raw & 0.500000 & 5942 & 4214 & 1568 & 0.963400 & 3.942100 & 0.072800 & 0.001800 & 383.535200 & 0.538300 & 0.437900 & 0.536900 & 0.425200 & 0.075000 & 0.245900 & 0.082000 \\
+chembl\_raw & 1.000000 & 11885 & 8495 & 3060 & 0.962600 & 5.156900 & 0.103000 & 0.002900 & 401.218800 & 0.547400 & 0.453900 & 0.542500 & 0.460600 & 0.083800 & 0.245700 & 0.092800 \\
+bindingdb\_raw & 0.250000 & 5621 & 4238 & 1309 & 0.982800 & 5.503900 & 0.074500 & 0.001700 & 423.140600 & 0.565900 & 0.414000 & 0.558600 & 0.481500 & 0.113400 & 0.248700 & 0.130700 \\
+bindingdb\_raw & 0.500000 & 11242 & 8359 & 2652 & 0.973100 & 8.327200 & 0.103700 & 0.002700 & 441.710900 & 0.564600 & 0.415000 & 0.543200 & 0.432500 & 0.085300 & 0.246000 & 0.123400 \\
+bindingdb\_raw & 1.000000 & 22484 & 16554 & 5408 & 0.969400 & 11.814700 & 0.165400 & 0.004900 & 486.414100 & 0.561900 & 0.405000 & 0.545300 & 0.449400 & 0.088000 & 0.247900 & 0.131800 \\
+\end{longtable}

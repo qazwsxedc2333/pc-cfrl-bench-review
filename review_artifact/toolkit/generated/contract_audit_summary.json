@@ -1,0 +1,11 @@
+{
+  "baseline_variant": "ecfp_absdiff_xgb",
+  "candidate_variant": "rich_diff_scalars",
+  "n_contracts_with_both_variants": 39,
+  "n_favorable_roc_auc": 38,
+  "favorable_roc_auc_rate": 0.974359,
+  "mean_delta_roc_auc": 0.061456,
+  "min_delta_roc_auc": -0.004327,
+  "max_delta_roc_auc": 0.129286,
+  "note": "Computed from frozen leaderboard rows; not a new training run."
+}

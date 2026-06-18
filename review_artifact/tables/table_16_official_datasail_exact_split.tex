@@ -1,0 +1,18 @@
+\begin{table*}[!t]
+\centering
+\scriptsize
+\caption{Official DataSAIL C2/ECFP exact split audit with the paper source-purge rule. Missing document/assay identifiers are treated as empty source sets; BindingDB fold2 is omitted by the prespecified minimum-test threshold.}
+\label{tab:supp_official_datasail}
+\begin{tabular}{lllrrrrrrrrrrrrr}
+\toprule
+Source & Split & Variant & Folds & Train & Test & ROC-AUC & PR-AUC & MCC & $\Delta$ ROC & $\Delta$ PR & $\Delta$ MCC & Ligand ov. & Scaffold ov. & Doc ov. & Assay ov. \\
+\midrule
+ChEMBL raw & Official DataSAIL C2/ECFP + source purge & ECFP abs-diff XGB & 5 & 1786 & 462 & 0.598 $\pm$ 0.039 & 0.476 $\pm$ 0.101 & 0.168 $\pm$ 0.079 & -- & -- & -- & 0.000 & 0.015 & 0.000 & 0.000 \\
+ChEMBL raw & Official DataSAIL C2/ECFP + source purge & PC-CFRL rich-diff & 5 & 1786 & 462 & 0.582 $\pm$ 0.114 & 0.480 $\pm$ 0.132 & 0.071 $\pm$ 0.188 & -0.016 & +0.003 & -0.098 & 0.000 & 0.015 & 0.000 & 0.000 \\
+ChEMBL raw & Official DataSAIL C2/ECFP + source purge & PC-CFRL scalar-only & 5 & 1786 & 462 & 0.569 $\pm$ 0.085 & 0.461 $\pm$ 0.169 & 0.084 $\pm$ 0.165 & -0.029 & -0.015 & -0.084 & 0.000 & 0.015 & 0.000 & 0.000 \\
+BindingDB raw & Official DataSAIL C2/ECFP + source purge & ECFP abs-diff XGB & 4 & 2722 & 952 & 0.463 $\pm$ 0.048 & 0.312 $\pm$ 0.137 & -0.070 $\pm$ 0.095 & -- & -- & -- & 0.000 & 0.003 & 0.000 & 0.000 \\
+BindingDB raw & Official DataSAIL C2/ECFP + source purge & PC-CFRL rich-diff & 4 & 2722 & 952 & 0.610 $\pm$ 0.045 & 0.429 $\pm$ 0.120 & 0.154 $\pm$ 0.071 & +0.147 & +0.117 & +0.224 & 0.000 & 0.003 & 0.000 & 0.000 \\
+BindingDB raw & Official DataSAIL C2/ECFP + source purge & PC-CFRL scalar-only & 4 & 2722 & 952 & 0.601 $\pm$ 0.065 & 0.416 $\pm$ 0.116 & 0.127 $\pm$ 0.073 & +0.139 & +0.104 & +0.197 & 0.000 & 0.003 & 0.000 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,58 @@
+{
+  "name": "PC-CFRL-Bench schema snapshot",
+  "version": "anonymous-review-2026-06",
+  "leaderboard_row": {
+    "required_columns": [
+      "benchmark",
+      "source",
+      "condition",
+      "split_mode",
+      "variant",
+      "roc_auc_mean",
+      "roc_auc_std",
+      "pr_auc_mean",
+      "mcc_mean",
+      "roc_auc_count",
+      "n_train_mean",
+      "n_test_mean",
+      "train_retention_after_purge_mean",
+      "target_overlap_rate_mean",
+      "exact_ligand_overlap_rate_mean",
+      "scaffold_overlap_rate_mean",
+      "document_source_overlap_rate_mean"
+    ],
+    "variant_aliases": {
+      "ecfp_absdiff_xgb": "ECFP-XGB",
+      "rich_diff_scalars": "PC-CFRL-full",
+      "rich_scalars_only": "PC-CFRL-scalar",
+      "rich_pair_only": "PC-CFRL-pair",
+      "extratrees_scalars": "ExtraTrees-scalars"
+    }
+  },
+  "contract_delta_row": {
+    "columns": [
+      "benchmark",
+      "source",
+      "condition",
+      "split_mode",
+      "baseline_variant",
+      "candidate_variant",
+      "baseline_roc_auc",
+      "candidate_roc_auc",
+      "delta_roc_auc",
+      "baseline_pr_auc",
+      "candidate_pr_auc",
+      "delta_pr_auc",
+      "baseline_mcc",
+      "candidate_mcc",
+      "delta_mcc",
+      "n_train_mean",
+      "n_test_mean",
+      "target_overlap_rate_mean",
+      "exact_ligand_overlap_rate_mean",
+      "scaffold_overlap_rate_mean",
+      "document_source_overlap_rate_mean"
+    ]
+  },
+  "split_contract_principle": "A model comparison is interpreted only within the same benchmark, condition, split_mode, label definition, and available input-information protocol."
+}
