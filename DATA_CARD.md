@@ -3,13 +3,13 @@
 ## Data Sources
 
 - ACNet activity-cliff pairs and target metadata.
-- MoleculeACE target-family activity-cliff tasks.
+- MoleculeACE target-cluster activity-cliff tasks.
 - Raw ChEMBL activity records reconstructed into pairwise activity-cliff rows.
 - Raw BindingDB affinity records reconstructed into pairwise activity-cliff rows.
 
 ## Split Fields
 
-The benchmark contract audits target, target family, exact ligand, scaffold, exact pair, pair scaffold, document source, assay source, and temporal fields when available. Raw ChEMBL includes document and assay source identifiers; raw BindingDB includes document/DOI/PMID-like source identifiers but has no measured assay-source field in the current table package.
+The benchmark contract audits target, sequence-derived target cluster, exact ligand, scaffold, exact pair, pair scaffold, document source, assay source, and temporal fields when available. Raw ChEMBL includes document and assay source identifiers; raw BindingDB includes document/DOI/PMID-like source identifiers but has no measured assay-source field in the current table package.
 
 ## Missing Values
 

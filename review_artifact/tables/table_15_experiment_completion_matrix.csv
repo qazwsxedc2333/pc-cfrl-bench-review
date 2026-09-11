@@ -1,7 +1,7 @@
 priority,experiment,status,artifact,artifact_exists,detail,notes
 P0,Frozen leakage-audited benchmark splits,done,results/tkde_benchmark_split_manifest.csv,True,,
-P0,ACNet target-family/cold-ligand hard OOD,done,results/acnet_target_family_best_joint_seed0_4_allfold_n10_summary.csv,True,,
-P0,MoleculeACE external target-family controls,done,results/moleculeace_target_family_pairs_seed0_4_n120_summary.csv,True,,
+P0,ACNet target-cluster/cold-ligand hard OOD,done,results/acnet_target_family_best_joint_seed0_4_allfold_n10_summary.csv,True,,
+P0,MoleculeACE external target-cluster controls,done,results/moleculeace_target_family_pairs_seed0_4_n120_summary.csv,True,,
 P0,MTPNet same-source split and cold-target controls,done,results/mtpnet_cold_target_analysis.md,True,,
 P0,Raw ChEMBL source/temporal benchmark,done,results/chembl_raw_source_temporal_pairs_seed0_4_n40_summary.csv,True,,
 P0,Raw BindingDB source-purged benchmark,done,results/bindingdb_raw_source_pairs_seed0_4_n80_summary.csv,True,,

@@ -382,7 +382,10 @@ def draw_fig6() -> None:
         return float(value) if not pd.isna(value) and str(value) != "" else np.nan
 
     def label_pair(bench: str, split: str) -> str:
-        return f"{NAME_MAP.get(bench, bench)}\n{NAME_MAP.get(split, split)}"
+        split_label = NAME_MAP.get(split, split)
+        if split == "family_scaffold_source_purged":
+            split_label = "target-cluster +\nscaffold + source"
+        return f"{NAME_MAP.get(bench, bench)}\n{split_label}"
 
     def summary_delta(df: pd.DataFrame, bench: str, split: str, variant: str, metric: str) -> float:
         pc = df[(df["benchmark"] == bench) & (df["split_mode"] == split) & (df["variant"] == variant)]
@@ -529,7 +532,7 @@ def draw_fig6() -> None:
         {"fig6a_multisplit": mat_a, "fig6b_severity": mat_b, "fig6c_multitask": mat_c, "fig6d_missing_source": mat_d},
         names=["panel", "row"],
     ).to_csv(out_dir() / "Fig6_source_data.csv")
-    save_figure(fig, "Fig6_robustness_boundary_heatmap")
+    save_figure(fig, "Fig6_robustness_stress_heatmap")
 
 
 def mol_image(smiles: str, highlight_atoms: list[int] | None = None, size: tuple[int, int] = (520, 260)) -> Image.Image:

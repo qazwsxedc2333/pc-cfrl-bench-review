@@ -20,7 +20,7 @@
 All hard-OOD reports include, when available:
 
 - target overlap rate;
-- target-family overlap rate;
+- sequence-derived target-cluster overlap rate;
 - exact ligand overlap rate;
 - Bemis-Murcko scaffold overlap rate;
 - exact pair and pair-scaffold overlap;
@@ -84,8 +84,8 @@ xgboost==3.2.0
 ## Reporting Notes
 
 - Report all paired tests over seed/fold matched runs.
-- Use `family_scaffold_purged` for the cleanest ACNet target-family/cold-ligand claim.
-- Use `family_scaffold_source_purged` and `temporal_scaffold_source_purged` for raw ChEMBL deployment-shift evidence.
+- Use the internal `family_scaffold_purged` mode for the ACNet target-cluster+scaffold/cold-ligand analysis.
+- Use the internal `family_scaffold_source_purged` and `temporal_scaffold_source_purged` modes for raw ChEMBL target-cluster+scaffold+source and same-target temporal+scaffold+source evidence.
 - Use BindingDB source-purged results as a database-transfer check because this endpoint has DOI/PMID source identifiers but no stable assay/year fields.
 - Use `results/tkde_benchmark_split_manifest.csv` as the frozen benchmark contract for reviewer-visible train/test indices.
 - Report non-neural and threshold-sensitivity results as stress tests; they prevent the story from depending on one weak baseline or one arbitrary cliff threshold.
