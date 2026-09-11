@@ -526,7 +526,13 @@ def draw_fig6() -> None:
     plt.subplots_adjust(left=0.15, right=0.93, top=0.96, bottom=0.12, wspace=0.70, hspace=0.42)
     signed_heatmap(axes[0], mat_a, "(a)", "delta vs ECFP", limit=0.12)
     signed_heatmap(axes[1], mat_b, "(b)", "ROC delta vs ECFP", limit=0.16)
-    signed_heatmap(axes[2], mat_c, "(c)", "favorable delta", limit=0.08)
+    signed_heatmap(
+        axes[2],
+        mat_c,
+        "(c)",
+        "direction-adjusted metric change vs ECFP",
+        limit=0.08,
+    )
     signed_heatmap(axes[3], mat_d, "(d)", "delta vs ECFP", limit=0.12)
     pd.concat(
         {"fig6a_multisplit": mat_a, "fig6b_severity": mat_b, "fig6c_multitask": mat_c, "fig6d_missing_source": mat_d},
