@@ -65,7 +65,7 @@ All hard-OOD reports include, when available:
 
 Run `configs/reproduce_trans_top_journal_experiments.sh` from the repository root. The script uses `${PY:-./.env/bin/python}` and writes `_reproduce` result files so it does not overwrite the curated outputs.
 
-The reproduction script covers 23 blocks: core ACNet, neural/fusion controls, MoleculeACE, reliability, explanations, raw ChEMBL, raw BindingDB, split freezing, raw-data auditing, non-neural stress tests, threshold sensitivity, stratified robustness, runtime profiling, LoHi/DataSAIL-style hard splits, raw selective/conformal reliability, noise/censoring sensitivity, qualitative case studies, statistical effect-size auditing, leaderboard packaging, remaining P0-P1 cross-database/prospective/top-k utility experiments, and final TKDE/Transactions reporting. Official DataSAIL exact-split rows are generated separately in the Python 3.12 DataSAIL environment and mirrored into the table package.
+The reproduction script covers 24 blocks: core ACNet, neural/fusion controls, MoleculeACE, reliability, explanations, raw ChEMBL, raw BindingDB, split freezing, raw-data auditing, non-neural stress tests, the unified representation-control matrix, threshold sensitivity, stratified robustness, runtime profiling, LoHi/DataSAIL-style hard splits, raw selective/conformal reliability, noise/censoring sensitivity, qualitative case studies, statistical effect-size auditing, leaderboard packaging, remaining P0-P1 cross-database/prospective/top-k utility experiments, and final TKDE/Transactions reporting. Official DataSAIL exact-split rows are generated separately in the Python 3.12 DataSAIL environment and mirrored into the table package.
 
 ## Key Environment Packages
 

@@ -80,10 +80,11 @@ def build_deltas(rows: list[dict[str, str]]) -> list[dict[str, object]]:
 def write_csv(rows: list[dict[str, object]], path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     if not rows:
-        path.write_text("", encoding="utf-8")
+        with path.open("w", encoding="utf-8", newline="\n") as handle:
+            handle.write("")
         return
     with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(rows[0].keys()))
+        writer = csv.DictWriter(handle, fieldnames=list(rows[0].keys()), lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -114,10 +115,9 @@ def main() -> None:
     deltas = build_deltas(rows)
     args.out_dir.mkdir(parents=True, exist_ok=True)
     write_csv(deltas, args.out_dir / "contract_leaderboard_deltas.csv")
-    (args.out_dir / "contract_audit_summary.json").write_text(
-        json.dumps(summarize(deltas), indent=2, ensure_ascii=False) + "\n",
-        encoding="utf-8",
-    )
+    summary_path = args.out_dir / "contract_audit_summary.json"
+    with summary_path.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(json.dumps(summarize(deltas), indent=2, ensure_ascii=False) + "\n")
 
 
 if __name__ == "__main__":

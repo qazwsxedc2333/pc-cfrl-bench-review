@@ -9,11 +9,11 @@ Create the environment and run:
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
 python reproduce_quick.py
+python scripts/qa_submission.py
 ```
 
-The audit reads the frozen leaderboard and verifies that 39 comparisons satisfy the same-contract rule and that 38 have a positive mean ROC-AUC difference. LoHi rows are included; DataSAIL assignments and stronger-input, adaptation, reliability, and auxiliary-task rows are excluded.
+The quick path has no third-party Python dependency. It verifies the frozen leaderboard result, distributed-file checksums, file and result manifests, executable entry-point paths, and the internal-to-manuscript split-contract mapping. The leaderboard check confirms that 39 comparisons satisfy the same-contract rule and that 38 have a positive mean ROC-AUC difference. LoHi rows are included; DataSAIL assignments and stronger-input, adaptation, reliability, and auxiliary-task rows are excluded.
 
 ## Level 2: Data Reconstruction
 
@@ -38,6 +38,8 @@ python scripts/run_tkde_lohi_leakage_splits.py --help
 ```
 
 `configs/reproduce_trans_top_journal_experiments.sh` documents the complete experiment sequence. Commands write new outputs rather than replacing the frozen tables.
+
+The unified representation-control block invokes `run_tkde_unified_baseline_matrix.py` with `random,target_family,family_scaffold_source_purged`. The latter two identifiers are retained for executable compatibility and map to the manuscript-facing target-cluster and target-cluster+scaffold+source contracts, respectively. In the strict mode, the script first constructs sequence-derived target-cluster folds and then removes training rows sharing test scaffolds or document/assay sources.
 
 Official DataSAIL v1.3.0 audits use C2/ECFP, molecular entities on both sides, SCIP, five equal target folds, eight threads, and one optimizer run per configuration. Time limits are 120 seconds for 20/40 clusters and 300 seconds for 80 clusters. The 80-cluster status means that no accepted assignment was found within this budget; it is not a proof of mathematical infeasibility. LoHi-style pair partitions group rows by paired Bemis--Murcko scaffold pattern, while ligand partitions group individual ligands by Bemis--Murcko scaffold. Seeds 0--2 are greedily balanced across five folds by positive and total row counts before document-source purging.
 
