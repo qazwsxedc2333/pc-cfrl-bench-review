@@ -12,9 +12,11 @@ The repository is intentionally table-first and compact. It contains the code ne
 - `review_artifact/case_studies/`: leaderboard snapshot, split-audit summary, case-study rows, and SAR provenance notes.
 - `review_artifact/official_datasail/`: official DataSAIL audit outputs used as splitter stress tests.
 - `review_artifact/toolkit/`: lightweight contract-audit utility.
-- `review_artifact/figures/pdf/`: exported figure PDFs for visual inspection.
+- `review_artifact/figures/pdf/` and `review_artifact/figures/source/`: exported figures and their frozen numerical source records.
 - `data/examples/`: small CSV samples only; full public data should be obtained from the original sources.
-- `DATA_MANIFEST.csv` and `RESULT_MANIFEST.csv`: source-data and manuscript-evidence maps.
+- `DATA_MANIFEST.csv` and `SOURCE_SNAPSHOT_MANIFEST.csv`: source access records, retrieval dates, release information, and content hashes.
+- `RESULT_MANIFEST.csv`: figure- and table-level inputs, preprocessing, fixed configuration, commands, intermediates, and outputs.
+- `SOFTWARE_ENVIRONMENT.csv`: exact package versions for the main benchmark and DataSAIL audit environments.
 
 ## Quick Check
 
@@ -58,8 +60,12 @@ Full reproduction requires downloading the public source datasets and rebuilding
 - reliability and auxiliary checks: `run_tkde_raw_reliability.py`, `run_tkde_experiments_5_7.py`
 - table and artifact export: `build_tkde_experiment_tables.py`, `export_tkde_leaderboard_package.py`
 - biological-unit uncertainty: `run_target_unit_bootstrap.py`
+- exact target-cluster membership: `export_target_cluster_membership.py`
+- publication figures: `draw_fig2_4.py`, `draw_fig5_7.py`, `draw_sfig1_6.py`, `draw_fig1_sfig7_sfig8.py`, and `draw_sfig9_fewshot_label_efficiency.py`
 
-The repository omits large raw data, pretrained embedding caches, conda environments, logs, and generated intermediate model files to remain lightweight. `REPRODUCIBILITY.md` distinguishes the quick contract audit from full data reconstruction and model reruns.
+The repository omits large raw data, pretrained embedding caches, conda environments, logs, and generated intermediate model files to remain lightweight. Frozen numerical figure sources remain available for direct inspection. Full figure regeneration follows the commands in `RESULT_MANIFEST.csv` after reconstructing the source table package. `REPRODUCIBILITY.md` distinguishes the quick contract audit from full data reconstruction and model reruns.
+
+Set `PC_CFRL_DATA_ROOT` to the reconstructed experiment-data directory before running publication plotting scripts. Neural and transformer controls additionally require the exact PyTorch and Transformers versions recorded in `SOFTWARE_ENVIRONMENT.csv`; these optional heavy dependencies are not installed by the lightweight quick-check requirements.
 
 ## Data Sources
 

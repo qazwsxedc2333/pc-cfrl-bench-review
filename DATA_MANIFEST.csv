@@ -1,6 +1,6 @@
 data_id,public_source,access_record,local_role,redistributed,processing_entry_point
 acnet,ACNet,Public benchmark release,Public activity-cliff benchmark anchor,Small derived tables only,scripts/run_tkde_unified_baseline_matrix.py
 moleculeace,MoleculeACE,Public benchmark release,External activity-cliff benchmark anchor,Small examples and derived tables only,scripts/run_moleculeace_target_family_pairs.py
-chembl_raw,ChEMBL REST API,Snapshot cached 2026-05-18; database release identifier was not persisted,Raw provenance-aware activity and pair reconstruction,No,scripts/run_chembl_raw_source_temporal_pairs.py
-bindingdb_raw,BindingDB REST API,Snapshot cached 2026-05-18,Raw provenance-aware affinity and pair reconstruction,No,scripts/run_bindingdb_raw_source_pairs.py
+chembl_raw,ChEMBL REST API,ChEMBL 36 web-service snapshot cached 2026-05-18; exact hashes in SOURCE_SNAPSHOT_MANIFEST.csv,Raw provenance-aware activity and pair reconstruction,No,scripts/run_chembl_raw_source_temporal_pairs.py
+bindingdb_raw,BindingDB REST API,Snapshot cached 2026-05-18; endpoint exposed no release identifier; exact hashes in SOURCE_SNAPSHOT_MANIFEST.csv,Raw provenance-aware affinity and pair reconstruction,No,scripts/run_bindingdb_raw_source_pairs.py
 chembl_release,ChEMBL historical releases,ChEMBL36 to ChEMBL37 historical release replay,Release-transfer evaluation,Derived summaries only,scripts/run_tkde_experiments_5_7.py

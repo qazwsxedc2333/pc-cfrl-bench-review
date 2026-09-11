@@ -1,0 +1,961 @@
+variant,task,delta,metric
+ecfp_absdiff_xgb,"ACNet
+family+ligand",0.0,roc_auc_mean
+rich_diff_scalars,"ACNet
+family+ligand",0.07289356300673955,roc_auc_mean
+rich_pair_only,"ACNet
+family+ligand",0.06403717536956444,roc_auc_mean
+rich_scalars_only,"ACNet
+family+ligand",,roc_auc_mean
+extratrees_scalars,"ACNet
+family+ligand",,roc_auc_mean
+ecfp_absdiff_xgb,"ACNet
+family+scaffold",0.0,roc_auc_mean
+rich_diff_scalars,"ACNet
+family+scaffold",0.07186967266951927,roc_auc_mean
+rich_pair_only,"ACNet
+family+scaffold",0.06359813103968437,roc_auc_mean
+rich_scalars_only,"ACNet
+family+scaffold",,roc_auc_mean
+extratrees_scalars,"ACNet
+family+scaffold",,roc_auc_mean
+ecfp_absdiff_xgb,"ACNet
+target-family",0.0,roc_auc_mean
+rich_diff_scalars,"ACNet
+target-family",0.06976710939101538,roc_auc_mean
+rich_pair_only,"ACNet
+target-family",0.06177988024779746,roc_auc_mean
+rich_scalars_only,"ACNet
+target-family",,roc_auc_mean
+extratrees_scalars,"ACNet
+target-family",,roc_auc_mean
+ecfp_absdiff_xgb,"BindingDB
+source+scaffold",0.0,roc_auc_mean
+rich_diff_scalars,"BindingDB
+source+scaffold",0.05534750127919197,roc_auc_mean
+rich_pair_only,"BindingDB
+source+scaffold",,roc_auc_mean
+rich_scalars_only,"BindingDB
+source+scaffold",0.053582799875452114,roc_auc_mean
+extratrees_scalars,"BindingDB
+source+scaffold",,roc_auc_mean
+ecfp_absdiff_xgb,"BindingDB
+target-family",0.0,roc_auc_mean
+rich_diff_scalars,"BindingDB
+target-family",0.06634054629265951,roc_auc_mean
+rich_pair_only,"BindingDB
+target-family",,roc_auc_mean
+rich_scalars_only,"BindingDB
+target-family",0.0679191003097287,roc_auc_mean
+extratrees_scalars,"BindingDB
+target-family",,roc_auc_mean
+ecfp_absdiff_xgb,"ChEMBL
+source+scaffold",0.0,roc_auc_mean
+rich_diff_scalars,"ChEMBL
+source+scaffold",0.03735200076462819,roc_auc_mean
+rich_pair_only,"ChEMBL
+source+scaffold",,roc_auc_mean
+rich_scalars_only,"ChEMBL
+source+scaffold",0.045022157204277824,roc_auc_mean
+extratrees_scalars,"ChEMBL
+source+scaffold",,roc_auc_mean
+ecfp_absdiff_xgb,"ChEMBL
+target-family",0.0,roc_auc_mean
+rich_diff_scalars,"ChEMBL
+target-family",0.03253385779133211,roc_auc_mean
+rich_pair_only,"ChEMBL
+target-family",,roc_auc_mean
+rich_scalars_only,"ChEMBL
+target-family",0.03656524462050703,roc_auc_mean
+extratrees_scalars,"ChEMBL
+target-family",,roc_auc_mean
+ecfp_absdiff_xgb,"ChEMBL
+temporal",0.0,roc_auc_mean
+rich_diff_scalars,"ChEMBL
+temporal",0.11044823387538949,roc_auc_mean
+rich_pair_only,"ChEMBL
+temporal",,roc_auc_mean
+rich_scalars_only,"ChEMBL
+temporal",0.11881816425608882,roc_auc_mean
+extratrees_scalars,"ChEMBL
+temporal",,roc_auc_mean
+ecfp_absdiff_xgb,"ChEMBL
+temporal+source",0.0,roc_auc_mean
+rich_diff_scalars,"ChEMBL
+temporal+source",0.11036573541564554,roc_auc_mean
+rich_pair_only,"ChEMBL
+temporal+source",,roc_auc_mean
+rich_scalars_only,"ChEMBL
+temporal+source",0.1075916549795175,roc_auc_mean
+extratrees_scalars,"ChEMBL
+temporal+source",,roc_auc_mean
+ecfp_absdiff_xgb,"LoHi
+LoHi ligand",0.0,roc_auc_mean
+rich_diff_scalars,"LoHi
+LoHi ligand",0.028690687963530692,roc_auc_mean
+rich_pair_only,"LoHi
+LoHi ligand",,roc_auc_mean
+rich_scalars_only,"LoHi
+LoHi ligand",0.029296237110845835,roc_auc_mean
+extratrees_scalars,"LoHi
+LoHi ligand",,roc_auc_mean
+ecfp_absdiff_xgb,"LoHi
+LoHi pair",0.0,roc_auc_mean
+rich_diff_scalars,"LoHi
+LoHi pair",0.01597829097199943,roc_auc_mean
+rich_pair_only,"LoHi
+LoHi pair",,roc_auc_mean
+rich_scalars_only,"LoHi
+LoHi pair",0.012564977558583212,roc_auc_mean
+extratrees_scalars,"LoHi
+LoHi pair",,roc_auc_mean
+ecfp_absdiff_xgb,"MoleculeACE
+family+scaffold",0.0,roc_auc_mean
+rich_diff_scalars,"MoleculeACE
+family+scaffold",0.029790624076097227,roc_auc_mean
+rich_pair_only,"MoleculeACE
+family+scaffold",,roc_auc_mean
+rich_scalars_only,"MoleculeACE
+family+scaffold",0.014057515896253592,roc_auc_mean
+extratrees_scalars,"MoleculeACE
+family+scaffold",,roc_auc_mean
+ecfp_absdiff_xgb,"MoleculeACE
+target-family",0.0,roc_auc_mean
+rich_diff_scalars,"MoleculeACE
+target-family",0.03130304987346766,roc_auc_mean
+rich_pair_only,"MoleculeACE
+target-family",,roc_auc_mean
+rich_scalars_only,"MoleculeACE
+target-family",0.014421114702340754,roc_auc_mean
+extratrees_scalars,"MoleculeACE
+target-family",,roc_auc_mean
+ecfp_absdiff_xgb,"Noise
+all pairs",0.0,roc_auc_mean
+rich_diff_scalars,"Noise
+all pairs",0.048944624978428775,roc_auc_mean
+rich_pair_only,"Noise
+all pairs",,roc_auc_mean
+rich_scalars_only,"Noise
+all pairs",0.050800487129162075,roc_auc_mean
+extratrees_scalars,"Noise
+all pairs",,roc_auc_mean
+ecfp_absdiff_xgb,"Noise
+equal relation rebuilt",0.0,roc_auc_mean
+rich_diff_scalars,"Noise
+equal relation rebuilt",0.06380933644939035,roc_auc_mean
+rich_pair_only,"Noise
+equal relation rebuilt",,roc_auc_mean
+rich_scalars_only,"Noise
+equal relation rebuilt",0.059072052197376324,roc_auc_mean
+extratrees_scalars,"Noise
+equal relation rebuilt",,roc_auc_mean
+ecfp_absdiff_xgb,"Noise
+high margin",0.0,roc_auc_mean
+rich_diff_scalars,"Noise
+high margin",0.043186272207818455,roc_auc_mean
+rich_pair_only,"Noise
+high margin",,roc_auc_mean
+rich_scalars_only,"Noise
+high margin",0.05248818443157566,roc_auc_mean
+extratrees_scalars,"Noise
+high margin",,roc_auc_mean
+ecfp_absdiff_xgb,"Noise
+high similarity",0.0,roc_auc_mean
+rich_diff_scalars,"Noise
+high similarity",0.013016978307854865,roc_auc_mean
+rich_pair_only,"Noise
+high similarity",,roc_auc_mean
+rich_scalars_only,"Noise
+high similarity",0.02185708001688269,roc_auc_mean
+extratrees_scalars,"Noise
+high similarity",,roc_auc_mean
+ecfp_absdiff_xgb,"Noise
+multi source",0.0,roc_auc_mean
+rich_diff_scalars,"Noise
+multi source",0.04318745329042517,roc_auc_mean
+rich_pair_only,"Noise
+multi source",,roc_auc_mean
+rich_scalars_only,"Noise
+multi source",0.041020512044136814,roc_auc_mean
+extratrees_scalars,"Noise
+multi source",,roc_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+BDB->ChEMBL lig.",0.0,roc_auc_mean
+rich_diff_scalars,"P0-P1
+BDB->ChEMBL lig.",0.07578659259527531,roc_auc_mean
+rich_pair_only,"P0-P1
+BDB->ChEMBL lig.",,roc_auc_mean
+rich_scalars_only,"P0-P1
+BDB->ChEMBL lig.",0.0767015985528321,roc_auc_mean
+extratrees_scalars,"P0-P1
+BDB->ChEMBL lig.",0.08953543690654797,roc_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+BDB->ChEMBL target",0.0,roc_auc_mean
+rich_diff_scalars,"P0-P1
+BDB->ChEMBL target",0.07704624050270092,roc_auc_mean
+rich_pair_only,"P0-P1
+BDB->ChEMBL target",,roc_auc_mean
+rich_scalars_only,"P0-P1
+BDB->ChEMBL target",0.07361433624821467,roc_auc_mean
+extratrees_scalars,"P0-P1
+BDB->ChEMBL target",0.13922971683321272,roc_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+BDB->ChEMBL pair",0.0,roc_auc_mean
+rich_diff_scalars,"P0-P1
+BDB->ChEMBL pair",0.0822545003213273,roc_auc_mean
+rich_pair_only,"P0-P1
+BDB->ChEMBL pair",,roc_auc_mean
+rich_scalars_only,"P0-P1
+BDB->ChEMBL pair",0.08097766436266696,roc_auc_mean
+extratrees_scalars,"P0-P1
+BDB->ChEMBL pair",0.08621763248198511,roc_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+BDB->ChEMBL scaf.",0.0,roc_auc_mean
+rich_diff_scalars,"P0-P1
+BDB->ChEMBL scaf.",0.08243935445883976,roc_auc_mean
+rich_pair_only,"P0-P1
+BDB->ChEMBL scaf.",,roc_auc_mean
+rich_scalars_only,"P0-P1
+BDB->ChEMBL scaf.",0.07892631499453362,roc_auc_mean
+extratrees_scalars,"P0-P1
+BDB->ChEMBL scaf.",0.07559515654530702,roc_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+future>2005",0.0,roc_auc_mean
+rich_diff_scalars,"P0-P1
+future>2005",0.11077594961457338,roc_auc_mean
+rich_pair_only,"P0-P1
+future>2005",,roc_auc_mean
+rich_scalars_only,"P0-P1
+future>2005",0.10535342783764434,roc_auc_mean
+extratrees_scalars,"P0-P1
+future>2005",0.10056988263521249,roc_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+future>2005 scaf.",0.0,roc_auc_mean
+rich_diff_scalars,"P0-P1
+future>2005 scaf.",0.12928570660258387,roc_auc_mean
+rich_pair_only,"P0-P1
+future>2005 scaf.",,roc_auc_mean
+rich_scalars_only,"P0-P1
+future>2005 scaf.",0.1175417142003864,roc_auc_mean
+extratrees_scalars,"P0-P1
+future>2005 scaf.",0.08757921759339216,roc_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+future>2010",0.0,roc_auc_mean
+rich_diff_scalars,"P0-P1
+future>2010",0.11408700829432539,roc_auc_mean
+rich_pair_only,"P0-P1
+future>2010",,roc_auc_mean
+rich_scalars_only,"P0-P1
+future>2010",0.12698170731707326,roc_auc_mean
+extratrees_scalars,"P0-P1
+future>2010",0.08210372697161317,roc_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+future>2010 scaf.",0.0,roc_auc_mean
+rich_diff_scalars,"P0-P1
+future>2010 scaf.",0.10930699269113908,roc_auc_mean
+rich_pair_only,"P0-P1
+future>2010 scaf.",,roc_auc_mean
+rich_scalars_only,"P0-P1
+future>2010 scaf.",0.10136818729298402,roc_auc_mean
+extratrees_scalars,"P0-P1
+future>2010 scaf.",0.10525734992198421,roc_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+future>2015",0.0,roc_auc_mean
+rich_diff_scalars,"P0-P1
+future>2015",0.09856405168905169,roc_auc_mean
+rich_pair_only,"P0-P1
+future>2015",,roc_auc_mean
+rich_scalars_only,"P0-P1
+future>2015",0.14282004646587976,roc_auc_mean
+extratrees_scalars,"P0-P1
+future>2015",-0.00042289886039881264,roc_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+future>2015 scaf.",0.0,roc_auc_mean
+rich_diff_scalars,"P0-P1
+future>2015 scaf.",0.09856405168905169,roc_auc_mean
+rich_pair_only,"P0-P1
+future>2015 scaf.",,roc_auc_mean
+rich_scalars_only,"P0-P1
+future>2015 scaf.",0.14282004646587976,roc_auc_mean
+extratrees_scalars,"P0-P1
+future>2015 scaf.",-0.00042289886039881264,roc_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+ChEMBL->BDB lig.",0.0,roc_auc_mean
+rich_diff_scalars,"P0-P1
+ChEMBL->BDB lig.",0.050879794631859765,roc_auc_mean
+rich_pair_only,"P0-P1
+ChEMBL->BDB lig.",,roc_auc_mean
+rich_scalars_only,"P0-P1
+ChEMBL->BDB lig.",0.05555602951771277,roc_auc_mean
+extratrees_scalars,"P0-P1
+ChEMBL->BDB lig.",0.0564569058022637,roc_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+ChEMBL->BDB target",0.0,roc_auc_mean
+rich_diff_scalars,"P0-P1
+ChEMBL->BDB target",0.05469488629374819,roc_auc_mean
+rich_pair_only,"P0-P1
+ChEMBL->BDB target",,roc_auc_mean
+rich_scalars_only,"P0-P1
+ChEMBL->BDB target",0.05743390899887324,roc_auc_mean
+extratrees_scalars,"P0-P1
+ChEMBL->BDB target",0.08256420625763072,roc_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+ChEMBL->BDB pair",0.0,roc_auc_mean
+rich_diff_scalars,"P0-P1
+ChEMBL->BDB pair",0.05250845131279114,roc_auc_mean
+rich_pair_only,"P0-P1
+ChEMBL->BDB pair",,roc_auc_mean
+rich_scalars_only,"P0-P1
+ChEMBL->BDB pair",0.06548875167853152,roc_auc_mean
+extratrees_scalars,"P0-P1
+ChEMBL->BDB pair",0.05636129429058245,roc_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+ChEMBL->BDB scaf.",0.0,roc_auc_mean
+rich_diff_scalars,"P0-P1
+ChEMBL->BDB scaf.",0.05897051425280586,roc_auc_mean
+rich_pair_only,"P0-P1
+ChEMBL->BDB scaf.",,roc_auc_mean
+rich_scalars_only,"P0-P1
+ChEMBL->BDB scaf.",0.05319962465142147,roc_auc_mean
+extratrees_scalars,"P0-P1
+ChEMBL->BDB scaf.",0.03317165732559346,roc_auc_mean
+ecfp_absdiff_xgb,"ACNet
+family+ligand",0.0,pr_auc_mean
+rich_diff_scalars,"ACNet
+family+ligand",0.040014946159278,pr_auc_mean
+rich_pair_only,"ACNet
+family+ligand",0.030186702528135295,pr_auc_mean
+rich_scalars_only,"ACNet
+family+ligand",,pr_auc_mean
+extratrees_scalars,"ACNet
+family+ligand",,pr_auc_mean
+ecfp_absdiff_xgb,"ACNet
+family+scaffold",0.0,pr_auc_mean
+rich_diff_scalars,"ACNet
+family+scaffold",0.0400361266890471,pr_auc_mean
+rich_pair_only,"ACNet
+family+scaffold",0.03148693760208662,pr_auc_mean
+rich_scalars_only,"ACNet
+family+scaffold",,pr_auc_mean
+extratrees_scalars,"ACNet
+family+scaffold",,pr_auc_mean
+ecfp_absdiff_xgb,"ACNet
+target-family",0.0,pr_auc_mean
+rich_diff_scalars,"ACNet
+target-family",0.03557371686964139,pr_auc_mean
+rich_pair_only,"ACNet
+target-family",0.027265231022324893,pr_auc_mean
+rich_scalars_only,"ACNet
+target-family",,pr_auc_mean
+extratrees_scalars,"ACNet
+target-family",,pr_auc_mean
+ecfp_absdiff_xgb,"BindingDB
+source+scaffold",0.0,pr_auc_mean
+rich_diff_scalars,"BindingDB
+source+scaffold",0.04849168764175532,pr_auc_mean
+rich_pair_only,"BindingDB
+source+scaffold",,pr_auc_mean
+rich_scalars_only,"BindingDB
+source+scaffold",0.048445512014108294,pr_auc_mean
+extratrees_scalars,"BindingDB
+source+scaffold",,pr_auc_mean
+ecfp_absdiff_xgb,"BindingDB
+target-family",0.0,pr_auc_mean
+rich_diff_scalars,"BindingDB
+target-family",0.060189236444084304,pr_auc_mean
+rich_pair_only,"BindingDB
+target-family",,pr_auc_mean
+rich_scalars_only,"BindingDB
+target-family",0.06522034764000367,pr_auc_mean
+extratrees_scalars,"BindingDB
+target-family",,pr_auc_mean
+ecfp_absdiff_xgb,"ChEMBL
+source+scaffold",0.0,pr_auc_mean
+rich_diff_scalars,"ChEMBL
+source+scaffold",0.039789920285746905,pr_auc_mean
+rich_pair_only,"ChEMBL
+source+scaffold",,pr_auc_mean
+rich_scalars_only,"ChEMBL
+source+scaffold",0.046723411332369125,pr_auc_mean
+extratrees_scalars,"ChEMBL
+source+scaffold",,pr_auc_mean
+ecfp_absdiff_xgb,"ChEMBL
+target-family",0.0,pr_auc_mean
+rich_diff_scalars,"ChEMBL
+target-family",0.04958031086578307,pr_auc_mean
+rich_pair_only,"ChEMBL
+target-family",,pr_auc_mean
+rich_scalars_only,"ChEMBL
+target-family",0.05097803595903977,pr_auc_mean
+extratrees_scalars,"ChEMBL
+target-family",,pr_auc_mean
+ecfp_absdiff_xgb,"ChEMBL
+temporal",0.0,pr_auc_mean
+rich_diff_scalars,"ChEMBL
+temporal",0.0738535292608043,pr_auc_mean
+rich_pair_only,"ChEMBL
+temporal",,pr_auc_mean
+rich_scalars_only,"ChEMBL
+temporal",0.08516122146657862,pr_auc_mean
+extratrees_scalars,"ChEMBL
+temporal",,pr_auc_mean
+ecfp_absdiff_xgb,"ChEMBL
+temporal+source",0.0,pr_auc_mean
+rich_diff_scalars,"ChEMBL
+temporal+source",0.07012802375568955,pr_auc_mean
+rich_pair_only,"ChEMBL
+temporal+source",,pr_auc_mean
+rich_scalars_only,"ChEMBL
+temporal+source",0.06912780303623978,pr_auc_mean
+extratrees_scalars,"ChEMBL
+temporal+source",,pr_auc_mean
+ecfp_absdiff_xgb,"LoHi
+LoHi ligand",0.0,pr_auc_mean
+rich_diff_scalars,"LoHi
+LoHi ligand",0.03270884181467537,pr_auc_mean
+rich_pair_only,"LoHi
+LoHi ligand",,pr_auc_mean
+rich_scalars_only,"LoHi
+LoHi ligand",0.03336544397472457,pr_auc_mean
+extratrees_scalars,"LoHi
+LoHi ligand",,pr_auc_mean
+ecfp_absdiff_xgb,"LoHi
+LoHi pair",0.0,pr_auc_mean
+rich_diff_scalars,"LoHi
+LoHi pair",0.021304175444408546,pr_auc_mean
+rich_pair_only,"LoHi
+LoHi pair",,pr_auc_mean
+rich_scalars_only,"LoHi
+LoHi pair",0.017513931183768094,pr_auc_mean
+extratrees_scalars,"LoHi
+LoHi pair",,pr_auc_mean
+ecfp_absdiff_xgb,"MoleculeACE
+family+scaffold",0.0,pr_auc_mean
+rich_diff_scalars,"MoleculeACE
+family+scaffold",0.026899074808395484,pr_auc_mean
+rich_pair_only,"MoleculeACE
+family+scaffold",,pr_auc_mean
+rich_scalars_only,"MoleculeACE
+family+scaffold",0.009880092533319007,pr_auc_mean
+extratrees_scalars,"MoleculeACE
+family+scaffold",,pr_auc_mean
+ecfp_absdiff_xgb,"MoleculeACE
+target-family",0.0,pr_auc_mean
+rich_diff_scalars,"MoleculeACE
+target-family",0.02807482928260341,pr_auc_mean
+rich_pair_only,"MoleculeACE
+target-family",,pr_auc_mean
+rich_scalars_only,"MoleculeACE
+target-family",0.009428475664744418,pr_auc_mean
+extratrees_scalars,"MoleculeACE
+target-family",,pr_auc_mean
+ecfp_absdiff_xgb,"Noise
+all pairs",0.0,pr_auc_mean
+rich_diff_scalars,"Noise
+all pairs",0.04669381235442027,pr_auc_mean
+rich_pair_only,"Noise
+all pairs",,pr_auc_mean
+rich_scalars_only,"Noise
+all pairs",0.04947246753140627,pr_auc_mean
+extratrees_scalars,"Noise
+all pairs",,pr_auc_mean
+ecfp_absdiff_xgb,"Noise
+equal relation rebuilt",0.0,pr_auc_mean
+rich_diff_scalars,"Noise
+equal relation rebuilt",0.06396473322765683,pr_auc_mean
+rich_pair_only,"Noise
+equal relation rebuilt",,pr_auc_mean
+rich_scalars_only,"Noise
+equal relation rebuilt",0.05912062958238079,pr_auc_mean
+extratrees_scalars,"Noise
+equal relation rebuilt",,pr_auc_mean
+ecfp_absdiff_xgb,"Noise
+high margin",0.0,pr_auc_mean
+rich_diff_scalars,"Noise
+high margin",0.04976886846374606,pr_auc_mean
+rich_pair_only,"Noise
+high margin",,pr_auc_mean
+rich_scalars_only,"Noise
+high margin",0.05599000507956153,pr_auc_mean
+extratrees_scalars,"Noise
+high margin",,pr_auc_mean
+ecfp_absdiff_xgb,"Noise
+high similarity",0.0,pr_auc_mean
+rich_diff_scalars,"Noise
+high similarity",0.032267308808364925,pr_auc_mean
+rich_pair_only,"Noise
+high similarity",,pr_auc_mean
+rich_scalars_only,"Noise
+high similarity",0.03282086054463007,pr_auc_mean
+extratrees_scalars,"Noise
+high similarity",,pr_auc_mean
+ecfp_absdiff_xgb,"Noise
+multi source",0.0,pr_auc_mean
+rich_diff_scalars,"Noise
+multi source",0.03903243602820489,pr_auc_mean
+rich_pair_only,"Noise
+multi source",,pr_auc_mean
+rich_scalars_only,"Noise
+multi source",0.03576258037711305,pr_auc_mean
+extratrees_scalars,"Noise
+multi source",,pr_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+BDB->ChEMBL lig.",0.0,pr_auc_mean
+rich_diff_scalars,"P0-P1
+BDB->ChEMBL lig.",0.08028190120904194,pr_auc_mean
+rich_pair_only,"P0-P1
+BDB->ChEMBL lig.",,pr_auc_mean
+rich_scalars_only,"P0-P1
+BDB->ChEMBL lig.",0.08167039385001001,pr_auc_mean
+extratrees_scalars,"P0-P1
+BDB->ChEMBL lig.",0.09616193817950952,pr_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+BDB->ChEMBL target",0.0,pr_auc_mean
+rich_diff_scalars,"P0-P1
+BDB->ChEMBL target",0.08437162920150543,pr_auc_mean
+rich_pair_only,"P0-P1
+BDB->ChEMBL target",,pr_auc_mean
+rich_scalars_only,"P0-P1
+BDB->ChEMBL target",0.08046366427727347,pr_auc_mean
+extratrees_scalars,"P0-P1
+BDB->ChEMBL target",0.1694213749572786,pr_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+BDB->ChEMBL pair",0.0,pr_auc_mean
+rich_diff_scalars,"P0-P1
+BDB->ChEMBL pair",0.08069510972768734,pr_auc_mean
+rich_pair_only,"P0-P1
+BDB->ChEMBL pair",,pr_auc_mean
+rich_scalars_only,"P0-P1
+BDB->ChEMBL pair",0.08248091700135596,pr_auc_mean
+extratrees_scalars,"P0-P1
+BDB->ChEMBL pair",0.0850948079180126,pr_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+BDB->ChEMBL scaf.",0.0,pr_auc_mean
+rich_diff_scalars,"P0-P1
+BDB->ChEMBL scaf.",0.0809722873060928,pr_auc_mean
+rich_pair_only,"P0-P1
+BDB->ChEMBL scaf.",,pr_auc_mean
+rich_scalars_only,"P0-P1
+BDB->ChEMBL scaf.",0.0774322376362232,pr_auc_mean
+extratrees_scalars,"P0-P1
+BDB->ChEMBL scaf.",0.0754012032016182,pr_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+future>2005",0.0,pr_auc_mean
+rich_diff_scalars,"P0-P1
+future>2005",0.12224682594235309,pr_auc_mean
+rich_pair_only,"P0-P1
+future>2005",,pr_auc_mean
+rich_scalars_only,"P0-P1
+future>2005",0.11675334613912752,pr_auc_mean
+extratrees_scalars,"P0-P1
+future>2005",0.13125128177110812,pr_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+future>2005 scaf.",0.0,pr_auc_mean
+rich_diff_scalars,"P0-P1
+future>2005 scaf.",0.09032006922506453,pr_auc_mean
+rich_pair_only,"P0-P1
+future>2005 scaf.",,pr_auc_mean
+rich_scalars_only,"P0-P1
+future>2005 scaf.",0.07689818844493562,pr_auc_mean
+extratrees_scalars,"P0-P1
+future>2005 scaf.",0.06936086212584663,pr_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+future>2010",0.0,pr_auc_mean
+rich_diff_scalars,"P0-P1
+future>2010",0.06217169095736119,pr_auc_mean
+rich_pair_only,"P0-P1
+future>2010",,pr_auc_mean
+rich_scalars_only,"P0-P1
+future>2010",0.07104005139826242,pr_auc_mean
+extratrees_scalars,"P0-P1
+future>2010",0.04345249540631779,pr_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+future>2010 scaf.",0.0,pr_auc_mean
+rich_diff_scalars,"P0-P1
+future>2010 scaf.",0.0583332001883366,pr_auc_mean
+rich_pair_only,"P0-P1
+future>2010 scaf.",,pr_auc_mean
+rich_scalars_only,"P0-P1
+future>2010 scaf.",0.052395221077810195,pr_auc_mean
+extratrees_scalars,"P0-P1
+future>2010 scaf.",0.049720210194345804,pr_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+future>2015",0.0,pr_auc_mean
+rich_diff_scalars,"P0-P1
+future>2015",0.03799731907235171,pr_auc_mean
+rich_pair_only,"P0-P1
+future>2015",,pr_auc_mean
+rich_scalars_only,"P0-P1
+future>2015",0.0726329667918692,pr_auc_mean
+extratrees_scalars,"P0-P1
+future>2015",-0.07518650172564781,pr_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+future>2015 scaf.",0.0,pr_auc_mean
+rich_diff_scalars,"P0-P1
+future>2015 scaf.",0.03799731907235171,pr_auc_mean
+rich_pair_only,"P0-P1
+future>2015 scaf.",,pr_auc_mean
+rich_scalars_only,"P0-P1
+future>2015 scaf.",0.0726329667918692,pr_auc_mean
+extratrees_scalars,"P0-P1
+future>2015 scaf.",-0.07518650172564781,pr_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+ChEMBL->BDB lig.",0.0,pr_auc_mean
+rich_diff_scalars,"P0-P1
+ChEMBL->BDB lig.",0.050079674073018665,pr_auc_mean
+rich_pair_only,"P0-P1
+ChEMBL->BDB lig.",,pr_auc_mean
+rich_scalars_only,"P0-P1
+ChEMBL->BDB lig.",0.05345113095599929,pr_auc_mean
+extratrees_scalars,"P0-P1
+ChEMBL->BDB lig.",0.0663063621144443,pr_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+ChEMBL->BDB target",0.0,pr_auc_mean
+rich_diff_scalars,"P0-P1
+ChEMBL->BDB target",0.049370553317074295,pr_auc_mean
+rich_pair_only,"P0-P1
+ChEMBL->BDB target",,pr_auc_mean
+rich_scalars_only,"P0-P1
+ChEMBL->BDB target",0.05492707545900061,pr_auc_mean
+extratrees_scalars,"P0-P1
+ChEMBL->BDB target",0.10593492345766703,pr_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+ChEMBL->BDB pair",0.0,pr_auc_mean
+rich_diff_scalars,"P0-P1
+ChEMBL->BDB pair",0.05119088577854353,pr_auc_mean
+rich_pair_only,"P0-P1
+ChEMBL->BDB pair",,pr_auc_mean
+rich_scalars_only,"P0-P1
+ChEMBL->BDB pair",0.06228142974258932,pr_auc_mean
+extratrees_scalars,"P0-P1
+ChEMBL->BDB pair",0.0557020689600376,pr_auc_mean
+ecfp_absdiff_xgb,"P0-P1
+ChEMBL->BDB scaf.",0.0,pr_auc_mean
+rich_diff_scalars,"P0-P1
+ChEMBL->BDB scaf.",0.0627067043783095,pr_auc_mean
+rich_pair_only,"P0-P1
+ChEMBL->BDB scaf.",,pr_auc_mean
+rich_scalars_only,"P0-P1
+ChEMBL->BDB scaf.",0.059197705491080777,pr_auc_mean
+extratrees_scalars,"P0-P1
+ChEMBL->BDB scaf.",0.040538370857747474,pr_auc_mean
+ecfp_absdiff_xgb,"ACNet
+family+ligand",0.0,mcc_mean
+rich_diff_scalars,"ACNet
+family+ligand",0.049013940118311394,mcc_mean
+rich_pair_only,"ACNet
+family+ligand",0.044492147872847415,mcc_mean
+rich_scalars_only,"ACNet
+family+ligand",,mcc_mean
+extratrees_scalars,"ACNet
+family+ligand",,mcc_mean
+ecfp_absdiff_xgb,"ACNet
+family+scaffold",0.0,mcc_mean
+rich_diff_scalars,"ACNet
+family+scaffold",0.0519789282496073,mcc_mean
+rich_pair_only,"ACNet
+family+scaffold",0.0490070130415796,mcc_mean
+rich_scalars_only,"ACNet
+family+scaffold",,mcc_mean
+extratrees_scalars,"ACNet
+family+scaffold",,mcc_mean
+ecfp_absdiff_xgb,"ACNet
+target-family",0.0,mcc_mean
+rich_diff_scalars,"ACNet
+target-family",0.041621435040633786,mcc_mean
+rich_pair_only,"ACNet
+target-family",0.03386127231706609,mcc_mean
+rich_scalars_only,"ACNet
+target-family",,mcc_mean
+extratrees_scalars,"ACNet
+target-family",,mcc_mean
+ecfp_absdiff_xgb,"BindingDB
+source+scaffold",0.0,mcc_mean
+rich_diff_scalars,"BindingDB
+source+scaffold",0.058062153831301505,mcc_mean
+rich_pair_only,"BindingDB
+source+scaffold",,mcc_mean
+rich_scalars_only,"BindingDB
+source+scaffold",0.055139725864625094,mcc_mean
+extratrees_scalars,"BindingDB
+source+scaffold",,mcc_mean
+ecfp_absdiff_xgb,"BindingDB
+target-family",0.0,mcc_mean
+rich_diff_scalars,"BindingDB
+target-family",0.0634020393360889,mcc_mean
+rich_pair_only,"BindingDB
+target-family",,mcc_mean
+rich_scalars_only,"BindingDB
+target-family",0.0698222090507489,mcc_mean
+extratrees_scalars,"BindingDB
+target-family",,mcc_mean
+ecfp_absdiff_xgb,"ChEMBL
+source+scaffold",0.0,mcc_mean
+rich_diff_scalars,"ChEMBL
+source+scaffold",0.0680282111421596,mcc_mean
+rich_pair_only,"ChEMBL
+source+scaffold",,mcc_mean
+rich_scalars_only,"ChEMBL
+source+scaffold",0.089682579901603,mcc_mean
+extratrees_scalars,"ChEMBL
+source+scaffold",,mcc_mean
+ecfp_absdiff_xgb,"ChEMBL
+target-family",0.0,mcc_mean
+rich_diff_scalars,"ChEMBL
+target-family",0.055305015568848995,mcc_mean
+rich_pair_only,"ChEMBL
+target-family",,mcc_mean
+rich_scalars_only,"ChEMBL
+target-family",0.07606672002780529,mcc_mean
+extratrees_scalars,"ChEMBL
+target-family",,mcc_mean
+ecfp_absdiff_xgb,"ChEMBL
+temporal",0.0,mcc_mean
+rich_diff_scalars,"ChEMBL
+temporal",0.130470770961634,mcc_mean
+rich_pair_only,"ChEMBL
+temporal",,mcc_mean
+rich_scalars_only,"ChEMBL
+temporal",0.15941392327439421,mcc_mean
+extratrees_scalars,"ChEMBL
+temporal",,mcc_mean
+ecfp_absdiff_xgb,"ChEMBL
+temporal+source",0.0,mcc_mean
+rich_diff_scalars,"ChEMBL
+temporal+source",0.1049892845573423,mcc_mean
+rich_pair_only,"ChEMBL
+temporal+source",,mcc_mean
+rich_scalars_only,"ChEMBL
+temporal+source",0.12798607648058,mcc_mean
+extratrees_scalars,"ChEMBL
+temporal+source",,mcc_mean
+ecfp_absdiff_xgb,"LoHi
+LoHi ligand",0.0,mcc_mean
+rich_diff_scalars,"LoHi
+LoHi ligand",0.047640655644664645,mcc_mean
+rich_pair_only,"LoHi
+LoHi ligand",,mcc_mean
+rich_scalars_only,"LoHi
+LoHi ligand",0.0450845857488526,mcc_mean
+extratrees_scalars,"LoHi
+LoHi ligand",,mcc_mean
+ecfp_absdiff_xgb,"LoHi
+LoHi pair",0.0,mcc_mean
+rich_diff_scalars,"LoHi
+LoHi pair",0.0183419183377068,mcc_mean
+rich_pair_only,"LoHi
+LoHi pair",,mcc_mean
+rich_scalars_only,"LoHi
+LoHi pair",0.016068571852461105,mcc_mean
+extratrees_scalars,"LoHi
+LoHi pair",,mcc_mean
+ecfp_absdiff_xgb,"MoleculeACE
+family+scaffold",0.0,mcc_mean
+rich_diff_scalars,"MoleculeACE
+family+scaffold",0.039249695876892296,mcc_mean
+rich_pair_only,"MoleculeACE
+family+scaffold",,mcc_mean
+rich_scalars_only,"MoleculeACE
+family+scaffold",0.013385055038235491,mcc_mean
+extratrees_scalars,"MoleculeACE
+family+scaffold",,mcc_mean
+ecfp_absdiff_xgb,"MoleculeACE
+target-family",0.0,mcc_mean
+rich_diff_scalars,"MoleculeACE
+target-family",0.03973464197054109,mcc_mean
+rich_pair_only,"MoleculeACE
+target-family",,mcc_mean
+rich_scalars_only,"MoleculeACE
+target-family",0.010725188795593102,mcc_mean
+extratrees_scalars,"MoleculeACE
+target-family",,mcc_mean
+ecfp_absdiff_xgb,"Noise
+all pairs",0.0,mcc_mean
+rich_diff_scalars,"Noise
+all pairs",0.07093718023299646,mcc_mean
+rich_pair_only,"Noise
+all pairs",,mcc_mean
+rich_scalars_only,"Noise
+all pairs",0.07448834406624681,mcc_mean
+extratrees_scalars,"Noise
+all pairs",,mcc_mean
+ecfp_absdiff_xgb,"Noise
+equal relation rebuilt",0.0,mcc_mean
+rich_diff_scalars,"Noise
+equal relation rebuilt",0.06808615682238131,mcc_mean
+rich_pair_only,"Noise
+equal relation rebuilt",,mcc_mean
+rich_scalars_only,"Noise
+equal relation rebuilt",0.060065753204999406,mcc_mean
+extratrees_scalars,"Noise
+equal relation rebuilt",,mcc_mean
+ecfp_absdiff_xgb,"Noise
+high margin",0.0,mcc_mean
+rich_diff_scalars,"Noise
+high margin",0.046609971225436794,mcc_mean
+rich_pair_only,"Noise
+high margin",,mcc_mean
+rich_scalars_only,"Noise
+high margin",0.06763152492622765,mcc_mean
+extratrees_scalars,"Noise
+high margin",,mcc_mean
+ecfp_absdiff_xgb,"Noise
+high similarity",0.0,mcc_mean
+rich_diff_scalars,"Noise
+high similarity",0.061307693039192104,mcc_mean
+rich_pair_only,"Noise
+high similarity",,mcc_mean
+rich_scalars_only,"Noise
+high similarity",0.05836740366366851,mcc_mean
+extratrees_scalars,"Noise
+high similarity",,mcc_mean
+ecfp_absdiff_xgb,"Noise
+multi source",0.0,mcc_mean
+rich_diff_scalars,"Noise
+multi source",0.07172153641663111,mcc_mean
+rich_pair_only,"Noise
+multi source",,mcc_mean
+rich_scalars_only,"Noise
+multi source",0.06819347688911906,mcc_mean
+extratrees_scalars,"Noise
+multi source",,mcc_mean
+ecfp_absdiff_xgb,"P0-P1
+BDB->ChEMBL lig.",0.0,mcc_mean
+rich_diff_scalars,"P0-P1
+BDB->ChEMBL lig.",0.11505164027126868,mcc_mean
+rich_pair_only,"P0-P1
+BDB->ChEMBL lig.",,mcc_mean
+rich_scalars_only,"P0-P1
+BDB->ChEMBL lig.",0.12147775188095519,mcc_mean
+extratrees_scalars,"P0-P1
+BDB->ChEMBL lig.",0.1302626688563481,mcc_mean
+ecfp_absdiff_xgb,"P0-P1
+BDB->ChEMBL target",0.0,mcc_mean
+rich_diff_scalars,"P0-P1
+BDB->ChEMBL target",0.1003322942451674,mcc_mean
+rich_pair_only,"P0-P1
+BDB->ChEMBL target",,mcc_mean
+rich_scalars_only,"P0-P1
+BDB->ChEMBL target",0.0893162142126116,mcc_mean
+extratrees_scalars,"P0-P1
+BDB->ChEMBL target",0.1935132973868478,mcc_mean
+ecfp_absdiff_xgb,"P0-P1
+BDB->ChEMBL pair",0.0,mcc_mean
+rich_diff_scalars,"P0-P1
+BDB->ChEMBL pair",0.1293400338754862,mcc_mean
+rich_pair_only,"P0-P1
+BDB->ChEMBL pair",,mcc_mean
+rich_scalars_only,"P0-P1
+BDB->ChEMBL pair",0.12093041962813861,mcc_mean
+extratrees_scalars,"P0-P1
+BDB->ChEMBL pair",0.12515306640008642,mcc_mean
+ecfp_absdiff_xgb,"P0-P1
+BDB->ChEMBL scaf.",0.0,mcc_mean
+rich_diff_scalars,"P0-P1
+BDB->ChEMBL scaf.",0.1268524451208751,mcc_mean
+rich_pair_only,"P0-P1
+BDB->ChEMBL scaf.",,mcc_mean
+rich_scalars_only,"P0-P1
+BDB->ChEMBL scaf.",0.1186594189118825,mcc_mean
+extratrees_scalars,"P0-P1
+BDB->ChEMBL scaf.",0.11424336146859801,mcc_mean
+ecfp_absdiff_xgb,"P0-P1
+future>2005",0.0,mcc_mean
+rich_diff_scalars,"P0-P1
+future>2005",0.113050602583977,mcc_mean
+rich_pair_only,"P0-P1
+future>2005",,mcc_mean
+rich_scalars_only,"P0-P1
+future>2005",0.11443060360009019,mcc_mean
+extratrees_scalars,"P0-P1
+future>2005",0.127911882005211,mcc_mean
+ecfp_absdiff_xgb,"P0-P1
+future>2005 scaf.",0.0,mcc_mean
+rich_diff_scalars,"P0-P1
+future>2005 scaf.",0.1641970859554664,mcc_mean
+rich_pair_only,"P0-P1
+future>2005 scaf.",,mcc_mean
+rich_scalars_only,"P0-P1
+future>2005 scaf.",0.1368589141213489,mcc_mean
+extratrees_scalars,"P0-P1
+future>2005 scaf.",0.15630726342168538,mcc_mean
+ecfp_absdiff_xgb,"P0-P1
+future>2010",0.0,mcc_mean
+rich_diff_scalars,"P0-P1
+future>2010",0.0832468826808615,mcc_mean
+rich_pair_only,"P0-P1
+future>2010",,mcc_mean
+rich_scalars_only,"P0-P1
+future>2010",0.10202734549597409,mcc_mean
+extratrees_scalars,"P0-P1
+future>2010",0.0893498833765655,mcc_mean
+ecfp_absdiff_xgb,"P0-P1
+future>2010 scaf.",0.0,mcc_mean
+rich_diff_scalars,"P0-P1
+future>2010 scaf.",0.1065455404597061,mcc_mean
+rich_pair_only,"P0-P1
+future>2010 scaf.",,mcc_mean
+rich_scalars_only,"P0-P1
+future>2010 scaf.",0.1094583963143768,mcc_mean
+extratrees_scalars,"P0-P1
+future>2010 scaf.",0.10977682707854451,mcc_mean
+ecfp_absdiff_xgb,"P0-P1
+future>2015",0.0,mcc_mean
+rich_diff_scalars,"P0-P1
+future>2015",0.2173555499661266,mcc_mean
+rich_pair_only,"P0-P1
+future>2015",,mcc_mean
+rich_scalars_only,"P0-P1
+future>2015",0.22198825093111121,mcc_mean
+extratrees_scalars,"P0-P1
+future>2015",0.0451196042751693,mcc_mean
+ecfp_absdiff_xgb,"P0-P1
+future>2015 scaf.",0.0,mcc_mean
+rich_diff_scalars,"P0-P1
+future>2015 scaf.",0.2173555499661266,mcc_mean
+rich_pair_only,"P0-P1
+future>2015 scaf.",,mcc_mean
+rich_scalars_only,"P0-P1
+future>2015 scaf.",0.22198825093111121,mcc_mean
+extratrees_scalars,"P0-P1
+future>2015 scaf.",0.0451196042751693,mcc_mean
+ecfp_absdiff_xgb,"P0-P1
+ChEMBL->BDB lig.",0.0,mcc_mean
+rich_diff_scalars,"P0-P1
+ChEMBL->BDB lig.",0.06325994154884279,mcc_mean
+rich_pair_only,"P0-P1
+ChEMBL->BDB lig.",,mcc_mean
+rich_scalars_only,"P0-P1
+ChEMBL->BDB lig.",0.0756781104798559,mcc_mean
+extratrees_scalars,"P0-P1
+ChEMBL->BDB lig.",0.0783623787224837,mcc_mean
+ecfp_absdiff_xgb,"P0-P1
+ChEMBL->BDB target",0.0,mcc_mean
+rich_diff_scalars,"P0-P1
+ChEMBL->BDB target",0.08397771620685988,mcc_mean
+rich_pair_only,"P0-P1
+ChEMBL->BDB target",,mcc_mean
+rich_scalars_only,"P0-P1
+ChEMBL->BDB target",0.0938205263111611,mcc_mean
+extratrees_scalars,"P0-P1
+ChEMBL->BDB target",0.11555501054955071,mcc_mean
+ecfp_absdiff_xgb,"P0-P1
+ChEMBL->BDB pair",0.0,mcc_mean
+rich_diff_scalars,"P0-P1
+ChEMBL->BDB pair",0.062199321817214596,mcc_mean
+rich_pair_only,"P0-P1
+ChEMBL->BDB pair",,mcc_mean
+rich_scalars_only,"P0-P1
+ChEMBL->BDB pair",0.0871167765794722,mcc_mean
+extratrees_scalars,"P0-P1
+ChEMBL->BDB pair",0.0647161111716272,mcc_mean
+ecfp_absdiff_xgb,"P0-P1
+ChEMBL->BDB scaf.",0.0,mcc_mean
+rich_diff_scalars,"P0-P1
+ChEMBL->BDB scaf.",0.0753770529986855,mcc_mean
+rich_pair_only,"P0-P1
+ChEMBL->BDB scaf.",,mcc_mean
+rich_scalars_only,"P0-P1
+ChEMBL->BDB scaf.",0.0659239799848559,mcc_mean
+extratrees_scalars,"P0-P1
+ChEMBL->BDB scaf.",0.040853790185449906,mcc_mean

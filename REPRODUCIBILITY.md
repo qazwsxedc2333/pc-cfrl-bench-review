@@ -17,7 +17,7 @@ The audit reads the frozen leaderboard and verifies that 39 comparisons satisfy 
 
 ## Level 2: Data Reconstruction
 
-`DATA_MANIFEST.csv` records each public source, access route, local role, and redistribution status. The raw-source scripts reconstruct activity rows and pair rows from ChEMBL and BindingDB. Frozen pair CSVs are intentionally not redistributed in this lightweight repository.
+`DATA_MANIFEST.csv` records each public source, access route, local role, and redistribution status. `SOURCE_SNAPSHOT_MANIFEST.csv` binds the cached ChEMBL 36 and BindingDB inputs and derived pair tables to their retrieval date and SHA-256 hashes. The BindingDB endpoint did not expose a release identifier, so the retrieval record, query specification, and content hash jointly identify that snapshot. The raw-source scripts reconstruct activity rows and pair rows from ChEMBL and BindingDB. Frozen pair CSVs are intentionally not redistributed in this lightweight repository.
 
 ## Level 3: Model Reruns
 
@@ -41,16 +41,35 @@ After reconstructing the raw pair CSVs, run:
 python scripts/run_target_unit_bootstrap.py \
   --dataset chembl \
   --pair-csv data/chembl_raw_moleculeace_target_pairs.csv \
-  --output-prefix results/chembl_target_unit_bootstrap
+  --output-prefix results/chembl_target_unit_bootstrap \
+  --split-mode family_scaffold_source_purged
 
 python scripts/run_target_unit_bootstrap.py \
   --dataset bindingdb \
   --pair-csv data/bindingdb_raw_moleculeace_target_pairs.csv \
-  --output-prefix results/bindingdb_target_unit_bootstrap
+  --output-prefix results/bindingdb_target_unit_bootstrap \
+  --split-mode family_scaffold_source_purged
 ```
 
-The script generates paired out-of-fold scores under the family, scaffold, and source-purged contract, averages each pair across five seeds, and recomputes the ROC-AUC difference in 2,000 bootstrap samples of biological targets and sequence-derived target clusters.
+These commands implement the strict target-cluster+scaffold+source contract. Repeat each command with `--split-mode target_family` and a distinct output prefix for the target-cluster-only contract. The command-line values retain the experiment code's original identifiers; manuscript-facing names are recorded in `RESULT_MANIFEST.csv`. The script generates paired out-of-fold scores, averages each pair across five seeds, reports every evaluable biological target, and recomputes the ROC-AUC difference in 2,000 bootstrap samples of biological targets and sequence-derived target clusters. `scripts/export_target_cluster_membership.py` exports the exact 23-target membership under both raw-source reconstructions.
+
+## Figure Reproduction
+
+`review_artifact/figures/source/` contains the frozen numerical record behind each data figure, and `review_artifact/figures/pdf/` contains the corresponding publication output. The plotting scripts reconstruct those source records from the full experiment table package and then render the figures. Because the lightweight repository does not redistribute the large raw/intermediate package, run the plotting commands only after Level 2 reconstruction. `RESULT_MANIFEST.csv` gives the input records, preprocessing, fixed configuration, exact command, intermediate source CSV, and final PDF for every main and supplementary figure.
+
+Point the plotting scripts to the reconstructed package before running them:
+
+```bash
+export PC_CFRL_DATA_ROOT=/path/to/reconstructed/experiment-data
+python scripts/draw_fig2_4.py
+python scripts/draw_fig5_7.py
+python scripts/draw_sfig1_6.py
+```
+
+## Software Environments
+
+`SOFTWARE_ENVIRONMENT.csv` lists exact versions for the main benchmark environment and the separate DataSAIL environment. These records correspond to the frozen reruns summarized in the manuscript and supplement.
 
 ## Evidence Map
 
-`RESULT_MANIFEST.csv` links each central manuscript item to its source table, script, comparison protocol, and inspection output. SHA-256 checksums for the distributed files are listed in `checksums_sha256.txt`.
+`RESULT_MANIFEST.csv` is the figure- and table-level execution map. For every manuscript evidence block it identifies inputs, preprocessing, fixed configuration, executable command, intermediate records, and final distributed output. SHA-256 checksums for the distributed files are listed in `checksums_sha256.txt`.

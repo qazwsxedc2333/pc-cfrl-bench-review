@@ -1,0 +1,3 @@
+dataset,split_contract,resampling_unit,n_units,n_rows,n_bootstrap,ecfp_roc_auc,pc_cfrl_full_roc_auc,delta_roc_auc,ci_2_5,ci_97_5,bootstrap_positive_rate
+bindingdb,target_family,biological_target,23,22484,2000,0.523293394797114,0.5654655812178608,0.04217218642074683,0.01666453588548377,0.06633647051798172,1.0
+bindingdb,target_family,target_cluster,10,22484,2000,0.523293394797114,0.5654655812178608,0.04217218642074683,0.023003464274453156,0.07400413489234928,0.9995

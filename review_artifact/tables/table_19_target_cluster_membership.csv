@@ -1,0 +1,24 @@
+target_chembl_id,uniprot_accession,target_pref_name,sequence_length,chembl_cluster,bindingdb_cluster
+CHEMBL1862,P00519,Tyrosine-protein kinase ABL1,1130,9,1
+CHEMBL1871,P10275,Androgen receptor,920,9,1
+CHEMBL2034,P04150,Glucocorticoid receptor,777,9,1
+CHEMBL204,P00734,Prothrombin,622,9,1
+CHEMBL214,P08908,5-hydroxytryptamine receptor 1A,422,2,1
+CHEMBL2147,P11309,Serine/threonine-protein kinase pim-1,313,8,4
+CHEMBL219,P21917,D(4) dopamine receptor,419,3,9
+CHEMBL228,P31645,Sodium-dependent serotonin transporter,630,6,7
+CHEMBL231,P35367,Histamine H1 receptor,487,2,0
+CHEMBL233,P35372,Mu-type opioid receptor,400,5,2
+CHEMBL234,P35462,D(3) dopamine receptor,400,1,2
+CHEMBL236,P41143,Delta-type opioid receptor,372,5,5
+CHEMBL237,P41145,Kappa-type opioid receptor,380,5,2
+CHEMBL238,Q01959,Sodium-dependent dopamine transporter,620,6,5
+CHEMBL244,P00742,Coagulation factor X,488,9,1
+CHEMBL262,P49841,Glycogen synthase kinase-3 beta,420,9,8
+CHEMBL264,Q9Y5N1,Histamine H3 receptor,445,0,6
+CHEMBL2835,P23458,Tyrosine-protein kinase JAK1,1154,2,0
+CHEMBL287,Q99720,Sigma non-opioid intracellular receptor 1,223,4,3
+CHEMBL2971,O60674,Tyrosine-protein kinase JAK2,1132,2,0
+CHEMBL4005,P42336,"Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit alpha isoform",1068,2,0
+CHEMBL4203,Q9HAZ1,Dual specificity protein kinase CLK4,481,7,0
+CHEMBL4792,O43614,Orexin receptor type 2,444,1,2

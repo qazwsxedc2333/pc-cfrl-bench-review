@@ -1,0 +1,17 @@
+source,split_mode,feature_category,category_label,share,std,n_folds
+total_gain,family_scaffold_purged,similarity_counts,Similarity/counts,0.3551712104618632,0.0640366528842626,25
+total_gain,family_scaffold_purged,descriptor_absdiff,Descriptor absdiff,0.307154821486069,0.0780743586754564,25
+total_gain,family_scaffold_purged,descriptor_sum,Descriptor sums,0.1774573598399153,0.0438731788326788,25
+total_gain,family_scaffold_purged,diff_bits,Difference bits,0.1602166082121524,0.0513030454081378,25
+total_gain,target_family,similarity_counts,Similarity/counts,0.3962860416530885,0.0727625417275848,25
+total_gain,target_family,descriptor_absdiff,Descriptor absdiff,0.3404748372740033,0.0603842571125734,25
+total_gain,target_family,descriptor_sum,Descriptor sums,0.149989598305413,0.0383857685544453,25
+total_gain,target_family,diff_bits,Difference bits,0.113249522767495,0.027855952070794,25
+treeshap,family_scaffold_purged,descriptor_absdiff,Descriptor absdiff,0.3943924266598224,0.0616751749959804,25
+treeshap,family_scaffold_purged,similarity_counts,Similarity/counts,0.3615223954026771,0.0598124743521536,25
+treeshap,family_scaffold_purged,descriptor_sum,Descriptor sums,0.1749803998329518,0.0392373210117611,25
+treeshap,family_scaffold_purged,diff_bits,Difference bits,0.0691047520921463,0.0228846320877016,25
+treeshap,target_family,descriptor_absdiff,Descriptor absdiff,0.4204076813985014,0.0486685473546433,25
+treeshap,target_family,similarity_counts,Similarity/counts,0.3769721914270082,0.0524040731275127,25
+treeshap,target_family,descriptor_sum,Descriptor sums,0.1568902935318918,0.0350526269152281,25
+treeshap,target_family,diff_bits,Difference bits,0.0457298217701248,0.0117984309491861,25

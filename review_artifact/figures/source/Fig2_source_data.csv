@@ -1,0 +1,201 @@
+panel,metric,display_metric,seed,fold,fold_mode,value,source_artifact,audit_scope
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,0,0,random,0.9993013832611428,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,0,1,random,0.0661570403926009,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,0,2,random,0.8494304110946013,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,0,3,random,0.9962202343454706,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,0,4,random,0.9998142127264282,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,1,0,random,1.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,1,1,random,0.8630229419703104,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,1,2,random,0.9995438606494284,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,1,3,random,0.9996496145760336,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,1,4,random,0.9993447456794168,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,2,0,random,0.999856702729813,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,2,1,random,1.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,2,2,random,0.8536429484448231,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,2,3,random,0.7786196672706309,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,2,4,random,1.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,3,0,random,0.8485941081111298,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,3,1,random,0.9910914702581368,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,3,2,random,0.9763964228119044,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,3,3,random,1.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,3,4,random,0.9937623262853736,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,4,0,random,0.6587947882736156,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,4,1,random,0.9292154420921545,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,4,2,random,0.9946198275179998,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,4,3,random,0.9972426470588236,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,4,4,random,0.9994413992947666,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,0,0,target_cluster_balanced,0.0013883629938154,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,0,1,target_cluster_balanced,0.0058697778905032,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,0,2,target_cluster_balanced,0.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,0,3,target_cluster_balanced,0.3292113859076062,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,0,4,target_cluster_balanced,0.3752327746741155,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,1,0,target_cluster_balanced,0.0013883629938154,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,1,1,target_cluster_balanced,0.0058697778905032,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,1,2,target_cluster_balanced,0.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,1,3,target_cluster_balanced,0.3498654813428471,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,1,4,target_cluster_balanced,0.3943122460824144,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,2,0,target_cluster_balanced,0.0013883629938154,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,2,1,target_cluster_balanced,0.0058697778905032,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,2,2,target_cluster_balanced,0.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,2,3,target_cluster_balanced,0.3292113859076062,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,2,4,target_cluster_balanced,0.3752327746741155,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,3,0,target_cluster_balanced,0.0013883629938154,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,3,1,target_cluster_balanced,0.0058697778905032,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,3,2,target_cluster_balanced,0.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,3,3,target_cluster_balanced,0.3498654813428471,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,3,4,target_cluster_balanced,0.3943122460824144,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,4,0,target_cluster_balanced,0.0013883629938154,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,4,1,target_cluster_balanced,0.0058697778905032,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,4,2,target_cluster_balanced,0.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,4,3,target_cluster_balanced,0.3498654813428471,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2a_pair_overlap,pair_overlap_rate,Pair overlap rate,4,4,target_cluster_balanced,0.3943122460824144,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,0,0,random,0.9993013832611428,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,0,1,random,0.06620422801057,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,0,2,random,0.8835066864784547,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,0,3,random,0.9998740078115156,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,0,4,random,0.9998142127264282,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,1,0,random,1.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,1,1,random,0.8895636527215475,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,1,2,random,0.9999429825811784,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,1,3,random,0.9996496145760336,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,1,4,random,0.9993447456794168,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,2,0,random,0.999856702729813,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,2,1,random,1.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,2,2,random,0.8894333191308053,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,2,3,random,0.8290232251688354,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,2,4,random,1.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,3,0,random,0.865392140421488,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,3,1,random,0.9922138047138048,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,3,2,random,0.9763964228119044,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,3,3,random,1.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,3,4,random,0.99697289363849,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,4,0,random,0.7001221498371335,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,4,1,random,0.9789788293897884,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,4,2,random,0.9971516733918824,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,4,3,random,0.9972426470588236,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,4,4,random,0.999930174911846,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,0,0,target_cluster_balanced,0.0013883629938154,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,0,1,target_cluster_balanced,0.0061596434653429,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,0,2,target_cluster_balanced,0.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,0,3,target_cluster_balanced,0.3296780214652356,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,0,4,target_cluster_balanced,0.4020018621973929,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,1,0,target_cluster_balanced,0.0013883629938154,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,1,1,target_cluster_balanced,0.0061596434653429,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,1,2,target_cluster_balanced,0.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,1,3,target_cluster_balanced,0.3512691542870511,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,1,4,target_cluster_balanced,0.4126523505513639,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,2,0,target_cluster_balanced,0.0013883629938154,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,2,1,target_cluster_balanced,0.0061596434653429,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,2,2,target_cluster_balanced,0.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,2,3,target_cluster_balanced,0.3296780214652356,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,2,4,target_cluster_balanced,0.4020018621973929,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,3,0,target_cluster_balanced,0.0013883629938154,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,3,1,target_cluster_balanced,0.0061596434653429,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,3,2,target_cluster_balanced,0.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,3,3,target_cluster_balanced,0.3512691542870511,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,3,4,target_cluster_balanced,0.4126523505513639,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,4,0,target_cluster_balanced,0.0013883629938154,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,4,1,target_cluster_balanced,0.0061596434653429,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,4,2,target_cluster_balanced,0.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,4,3,target_cluster_balanced,0.3512691542870511,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2b_ligand_overlap,any_ligand_overlap_rate,Any-ligand overlap rate,4,4,target_cluster_balanced,0.4126523505513639,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,0,0,random,0.9993013832611428,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,0,1,random,0.0663929784824462,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,0,2,random,0.8868746904408122,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,0,3,random,0.9998740078115156,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,0,4,random,0.9998142127264282,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,1,0,random,1.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,1,1,random,0.8918128654970761,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,1,2,random,1.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,1,3,random,0.9996496145760336,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,1,4,random,0.9993447456794168,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,2,0,random,0.999856702729813,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,2,1,random,1.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,2,2,random,0.8853855986365573,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,2,3,random,0.8382474056992258,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,2,4,random,1.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,3,0,random,0.8697523617865728,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,3,1,random,0.9916526374859708,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,3,2,random,0.9765430288813955,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,3,3,random,1.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,3,4,random,0.99862404256295,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,4,0,random,0.7149837133550488,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,4,1,random,0.9688667496886676,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,4,2,random,0.9971516733918824,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,4,3,random,0.9972426470588236,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,4,4,random,1.0,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,0,0,target_cluster_balanced,0.0013883629938154,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,0,1,target_cluster_balanced,0.0075727381426863,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,0,2,target_cluster_balanced,0.0093881157499447,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,0,3,target_cluster_balanced,0.3460102659822678,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,0,4,target_cluster_balanced,0.429352886405959,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,1,0,target_cluster_balanced,0.0013883629938154,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,1,1,target_cluster_balanced,0.0075727381426863,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,1,2,target_cluster_balanced,0.0093881157499447,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,1,3,target_cluster_balanced,0.3676453386360978,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,1,4,target_cluster_balanced,0.4402785838653511,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,2,0,target_cluster_balanced,0.0013883629938154,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,2,1,target_cluster_balanced,0.0075727381426863,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,2,2,target_cluster_balanced,0.0093881157499447,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,2,3,target_cluster_balanced,0.3460102659822678,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,2,4,target_cluster_balanced,0.429352886405959,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,3,0,target_cluster_balanced,0.0013883629938154,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,3,1,target_cluster_balanced,0.0075727381426863,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,3,2,target_cluster_balanced,0.0093881157499447,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,3,3,target_cluster_balanced,0.3676453386360978,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,3,4,target_cluster_balanced,0.4402785838653511,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,4,0,target_cluster_balanced,0.0013883629938154,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,4,1,target_cluster_balanced,0.0075727381426863,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,4,2,target_cluster_balanced,0.0093881157499447,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,4,3,target_cluster_balanced,0.3676453386360978,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2c_scaffold_overlap,pair_scaffold_overlap_rate,Pair-scaffold overlap rate,4,4,target_cluster_balanced,0.4402785838653511,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,0,0,random,0.2311024172139164,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,0,1,random,0.0219658361645904,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,0,2,random,0.1901931649331352,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,0,3,random,0.2235731384654151,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,0,4,random,0.2313980492336275,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,1,0,random,0.0931338363025423,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,1,1,random,0.1874718848403058,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,1,2,random,0.110186161872452,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,1,3,random,0.2391380518570427,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,1,4,random,0.1936276517323286,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,2,0,random,0.0795299849537866,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,2,1,random,0.2195073500198649,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,2,2,random,0.2185769066893907,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,2,3,random,0.202108384121232,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,2,4,random,0.0521334428409402,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,3,0,random,0.0977136787970261,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,3,1,random,0.2114898989898989,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,3,2,random,0.2324439231784195,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,3,3,random,0.246447881302653,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,3,4,random,0.0255469430812273,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,4,0,random,0.1762011400651466,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,4,1,random,0.12906600249066,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,4,2,random,0.1995411029353588,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,4,3,random,0.150735294117647,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,4,4,random,0.0850469573717836,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,0,0,target_cluster_balanced,0.0126719676890066,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,0,1,target_cluster_balanced,0.2462045726294431,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,0,2,target_cluster_balanced,0.2079743759664236,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,0,3,target_cluster_balanced,0.1989034064395707,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,0,4,target_cluster_balanced,0.1529329608938547,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,1,0,target_cluster_balanced,0.0126719676890066,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,1,1,target_cluster_balanced,0.2462045726294431,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,1,2,target_cluster_balanced,0.2079743759664236,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,1,3,target_cluster_balanced,0.1990876125862674,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,1,4,target_cluster_balanced,0.1528728961114335,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,2,0,target_cluster_balanced,0.0126719676890066,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,2,1,target_cluster_balanced,0.2462045726294431,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,2,2,target_cluster_balanced,0.2079743759664236,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,2,3,target_cluster_balanced,0.1989034064395707,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,2,4,target_cluster_balanced,0.1529329608938547,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,3,0,target_cluster_balanced,0.0126719676890066,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,3,1,target_cluster_balanced,0.2462045726294431,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,3,2,target_cluster_balanced,0.2079743759664236,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,3,3,target_cluster_balanced,0.1990876125862674,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,3,4,target_cluster_balanced,0.1528728961114335,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,4,0,target_cluster_balanced,0.0126719676890066,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,4,1,target_cluster_balanced,0.2462045726294431,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,4,2,target_cluster_balanced,0.2079743759664236,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,4,3,target_cluster_balanced,0.1990876125862674,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit
+fig2d_positive_rate,test_positive_rate,Positive-pair rate,4,4,target_cluster_balanced,0.1528728961114335,results/leakage_and_split_audit.csv,ACNet random vs target-cluster-balanced fold leakage audit

@@ -1,0 +1,14 @@
+{
+  "pc_cfrl": "#0072B2",
+  "ecfp": "#4D4D4D",
+  "extratrees": "#009E73",
+  "scalar_only": "#E69F00",
+  "pair_only": "#56B4E9",
+  "negative": "#D55E00",
+  "neutral": "#B3B3B3",
+  "light_neutral": "#E8E8E8",
+  "border": "#1A1A1A",
+  "grid": "#EAEAEA",
+  "missing": "#F5F5F5",
+  "white": "#FFFFFF"
+}

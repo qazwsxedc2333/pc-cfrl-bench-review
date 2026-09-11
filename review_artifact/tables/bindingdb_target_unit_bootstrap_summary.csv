@@ -1,0 +1,3 @@
+dataset,split_contract,resampling_unit,n_units,n_rows,n_bootstrap,ecfp_roc_auc,pc_cfrl_full_roc_auc,delta_roc_auc,ci_2_5,ci_97_5,bootstrap_positive_rate
+bindingdb,family_scaffold_source_purged,biological_target,23,22484,2000,0.5205477688328082,0.559150408200138,0.03860263936732977,0.01007774982676809,0.06529672983652378,0.997
+bindingdb,family_scaffold_source_purged,target_cluster,10,22484,2000,0.5205477688328082,0.559150408200138,0.03860263936732977,0.01399990036944503,0.0735573599272904,0.9985

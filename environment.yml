@@ -12,4 +12,5 @@ dependencies:
   - networkx
   - tqdm
   - pyyaml
-
+  - matplotlib
+  - pillow
