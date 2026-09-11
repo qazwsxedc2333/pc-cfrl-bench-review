@@ -357,17 +357,47 @@ def draw_sfig1() -> None:
 def grouped_barh(ax: mpl.axes.Axes, df: pd.DataFrame, categories: list[str], xscale: str = "linear") -> None:
     y = np.arange(len(categories))
     offsets = [-0.17, 0.17]
+    log_floor = 1e2
+    if xscale == "log":
+        ax.set_xscale("log")
+        ax.set_xlim(log_floor, 1e6)
     for offset, (_, row), color in zip(offsets, df.iterrows(), [PALETTE["pc_cfrl"], PALETTE["extratrees"]]):
-        values = []
+        values: list[float] = []
         for cat in categories:
             val = float(row.get(cat, np.nan))
             values.append(val if val > 0 else np.nan)
-        ax.barh(y + offset, values, height=0.28, color=color, alpha=0.82, edgecolor=PALETTE["border"], linewidth=0.25)
+        values_array = np.asarray(values, dtype=float)
+        if xscale == "log":
+            valid = np.isfinite(values_array) & (values_array >= log_floor)
+            widths = np.where(valid, values_array - log_floor, np.nan)
+            ax.barh(
+                y + offset,
+                widths,
+                left=log_floor,
+                height=0.28,
+                color=color,
+                alpha=0.82,
+                edgecolor=PALETTE["border"],
+                linewidth=0.25,
+                zorder=3,
+            )
+            for yi, is_valid in zip(y + offset, valid):
+                if not is_valid:
+                    ax.text(log_floor * 1.12, yi, "NA", color=color, fontsize=7.2, ha="left", va="center", zorder=4)
+        else:
+            ax.barh(
+                y + offset,
+                values_array,
+                height=0.28,
+                color=color,
+                alpha=0.82,
+                edgecolor=PALETTE["border"],
+                linewidth=0.25,
+                zorder=3,
+            )
     ax.set_yticks(y)
     ax.set_yticklabels([c.replace("_", " ") for c in categories])
-    if xscale == "log":
-        ax.set_xscale("log")
-    ax.grid(axis="x", color=PALETTE["grid"], linewidth=0.35)
+    ax.grid(axis="x", color=PALETTE["grid"], linewidth=0.35, zorder=0)
     set_box(ax)
 
 
