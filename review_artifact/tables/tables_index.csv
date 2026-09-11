@@ -26,3 +26,8 @@ table_18_biological_unit_bootstrap,Biological-target and target-cluster bootstra
 table_19_target_cluster_membership,Complete target-cluster membership,23,review_artifact/tables/table_19_target_cluster_membership.csv,,scripts/export_target_cluster_membership.py,,,
 table_20_target_level_distribution,Strict-contract target-level ROC-AUC differences,23,review_artifact/tables/table_20_target_level_distribution.csv,,review_artifact/tables/*target_unit_bootstrap_target_level.csv,,,
 table_21_target_distribution_summary,Biological-target effect distribution summary,4,review_artifact/tables/table_21_target_distribution_summary.csv,,review_artifact/tables/*target_distribution_summary.csv,,,
+raw_audit_15_summary,Matched random-versus-audited leakage diagnostic,8,review_artifact/tables/raw_audit_15_summary.csv,,review_artifact/tables/raw_audit_15_fold_metrics.csv,,,
+raw_audit_15_fold_metrics,Audit-15 run-level metrics,120,review_artifact/tables/raw_audit_15_fold_metrics.csv,,tkde_unified_full_matrix_fold_metrics.csv,,,
+representation_selection_42,Complete representation selection matrix,42,review_artifact/tables/representation_selection_42.csv,,tkde_unified_full_matrix_summary.csv,,,
+representation_selection_changes_12,Random-to-audited representation selection changes,12,review_artifact/tables/representation_selection_changes_12.csv,,tkde_full_ranking_reversal_latest_selection_regret.csv,,,
+representation_ranking_reversal_12,Pairwise representation-order reversal audit,12,review_artifact/tables/representation_ranking_reversal_12.csv,,tkde_full_ranking_reversal_latest_rank_correlations.csv,,,

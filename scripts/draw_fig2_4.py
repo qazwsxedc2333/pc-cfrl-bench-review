@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Draw Fig.2--Fig.4 for the PC-CFRL-Bench manuscript.
+"""Draw Fig.2--Fig.4 for the PC-CFRL TKDE manuscript.
 
 Figure contract, following the local nature-figure workflow:
 - Fig.2 conclusion: target-cluster-balanced splitting sharply reduces pair,
@@ -7,7 +7,7 @@ Figure contract, following the local nature-figure workflow:
 - Fig.3 conclusion: PC-CFRL is consistently stronger than ECFP under hard-OOD
   settings, while remaining visually separable from pair-only/scalar controls.
 - Fig.4 conclusion: PC-CFRL improves over ECFP under cross-database and
-  prospective temporal shifts; paired dumbbells show the deployment delta.
+  historical-release temporal shifts; paired dumbbells show the deployment delta.
 
 Backend: Python/matplotlib only.
 Export: white background, Times New Roman, PDF + 600 dpi PNG, fixed palette.
@@ -18,7 +18,6 @@ from __future__ import annotations
 from pathlib import Path
 import json
 import math
-import os
 import re
 
 import matplotlib as mpl
@@ -57,8 +56,8 @@ NAME_MAP = {
     "rich_pair_only": "pair-only",
     "rich_scalars_only": "scalar-only",
     "extratrees_scalars": "ExtraTrees",
-    "family_scaffold_purged": "family+scaffold",
-    "family_scaffold_source_purged": "source+scaffold",
+    "family_scaffold_purged": "target-cluster+scaffold",
+    "family_scaffold_source_purged": "target-cluster+scaffold+source",
     "temporal_scaffold_source_purged": "temporal+source",
     "bindingdb_to_chembl_scaffold_purged": "BDB->ChEMBL\nscaffold",
     "chembl_to_bindingdb_scaffold_purged": "ChEMBL->BDB\nscaffold",
@@ -75,16 +74,14 @@ NAME_MAP = {
 
 def project_root() -> Path:
     here = Path(__file__).resolve()
-    configured = os.environ.get("PC_CFRL_DATA_ROOT")
-    candidates = ([Path(configured).expanduser()] if configured else []) + [
-        here.parent.parent / "data_remote",
+    candidates = [
+        here.parent.parent / "PC-CFRL_TKDE_trans_framework_20260607" / "data_remote",
+        Path(r"C:\codex_tmp\paper15_tkde_remote"),
     ]
     for cand in candidates:
         if (cand / "tkde_experiment_tables_2026_05_20").exists():
             return cand
-    raise FileNotFoundError(
-        "Set PC_CFRL_DATA_ROOT to the reconstructed experiment-data directory."
-    )
+    raise FileNotFoundError("Could not locate data_remote/tkde_experiment_tables_2026_05_20")
 
 
 def table_dir() -> Path:
@@ -92,7 +89,10 @@ def table_dir() -> Path:
 
 
 def extra_dir() -> Path:
-    return project_root() / "extra_csv"
+    root = project_root()
+    if (root / "extra_csv").exists():
+        return root / "extra_csv"
+    return Path(r"C:\codex_tmp\paper15_tkde_remote\extra_csv")
 
 
 def out_dir() -> Path:
@@ -183,7 +183,7 @@ def results_1_4_dir() -> Path:
     root = project_root()
     candidates = [
         root / "remote_1_4_experiments_20260611" / "results",
-        root / "results",
+        Path(r"C:\codex_tmp\paper15_tkde_remote\remote_1_4_experiments_20260611\results"),
     ]
     for cand in candidates:
         if cand.exists():
@@ -196,10 +196,10 @@ def read_results_1_4(name: str) -> pd.DataFrame:
 
 
 def results_dir() -> Path:
-    root = project_root()
+    here = Path(__file__).resolve()
     candidates = [
-        root / "results",
-        root / "15PC-CFRL" / "results",
+        here.parent.parent / "15PC-CFRL" / "results",
+        Path(r"C:\codex_tmp\paper15_tkde_remote\results"),
     ]
     for cand in candidates:
         if cand.exists():
@@ -212,11 +212,11 @@ def read_result(name: str) -> pd.DataFrame:
 
 
 def read_fold_leakage_audit() -> pd.DataFrame:
-    root = project_root()
+    here = Path(__file__).resolve()
     candidates = [
-        root / "results" / "leakage_and_split_audit.csv",
-        root / "15PC-CFRL" / "results" / "leakage_and_split_audit.csv",
-        root / "extra_csv" / "leakage_and_split_audit.csv",
+        here.parent.parent / "15PC-CFRL" / "results" / "leakage_and_split_audit.csv",
+        project_root() / "extra_csv" / "leakage_and_split_audit.csv",
+        Path(r"C:\codex_tmp\fig2_literature\leakage_and_split_audit.csv"),
     ]
     for path in candidates:
         if path.exists():
@@ -469,21 +469,21 @@ def collect_hard_ood_effects() -> pd.DataFrame:
         "acnet_target_family_best_joint_seed0_4_allfold_n10_paired_deltas.csv",
         "ACNet",
         "family_scaffold_purged",
-        "family+scaffold",
+        "target-cluster+scaffold",
         ["rich_pair_only", "rich_diff_scalars"],
     )
     add_delta_file(
         "moleculeace_target_family_pairs_seed0_4_n120_paired_deltas.csv",
         "MoleculeACE",
         "family_scaffold_purged",
-        "family+scaffold",
+        "target-cluster+scaffold",
         ["rich_scalars_only", "rich_diff_scalars"],
     )
     add_audit_rows(
         "raw_chembl",
         "ChEMBL",
         "family_scaffold_source_purged",
-        "source+scaffold",
+        "target-cluster+scaffold+source",
         ["rich_scalars_only", "rich_diff_scalars"],
     )
     add_audit_rows(
@@ -497,16 +497,16 @@ def collect_hard_ood_effects() -> pd.DataFrame:
         "raw_bindingdb",
         "BindingDB",
         "family_scaffold_source_purged",
-        "source+scaffold",
+        "target-cluster+scaffold+source",
         ["rich_scalars_only", "rich_diff_scalars"],
     )
     df = pd.DataFrame(rows)
     group_order = {
-        "ACNet\nfamily+scaffold": 0,
-        "MoleculeACE\nfamily+scaffold": 1,
-        "ChEMBL\nsource+scaffold": 2,
+        "ACNet\ntarget-cluster+scaffold": 0,
+        "MoleculeACE\ntarget-cluster+scaffold": 1,
+        "ChEMBL\ntarget-cluster+scaffold+source": 2,
         "ChEMBL\ntemporal+source": 3,
-        "BindingDB\nsource+scaffold": 4,
+        "BindingDB\ntarget-cluster+scaffold+source": 4,
     }
     metric_order = {"roc_auc": 0, "pr_auc": 1, "mcc": 2}
     method_order = {"pair-only": 0, "scalar-only": 1, "PC-CFRL": 2}
@@ -579,11 +579,11 @@ def paired_delta_forest_panel(
 def draw_fig3() -> None:
     df = collect_hard_ood_effects()
     groups = [
-        "ACNet\nfamily+scaffold",
-        "MoleculeACE\nfamily+scaffold",
-        "ChEMBL\nsource+scaffold",
+        "ACNet\ntarget-cluster+scaffold",
+        "MoleculeACE\ntarget-cluster+scaffold",
+        "ChEMBL\ntarget-cluster+scaffold+source",
         "ChEMBL\ntemporal+source",
-        "BindingDB\nsource+scaffold",
+        "BindingDB\ntarget-cluster+scaffold+source",
     ]
     variants = ["pair-only", "scalar-only", "PC-CFRL"]
     ci_bounds = df[["ci95_low", "ci95_high"]].to_numpy(dtype=float)

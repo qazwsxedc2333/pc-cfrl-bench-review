@@ -17,7 +17,13 @@ The audit reads the frozen leaderboard and verifies that 39 comparisons satisfy 
 
 ## Level 2: Data Reconstruction
 
-`DATA_MANIFEST.csv` records each public source, access route, local role, and redistribution status. `SOURCE_SNAPSHOT_MANIFEST.csv` binds the cached ChEMBL 36 and BindingDB inputs and derived pair tables to their retrieval date and SHA-256 hashes. The BindingDB endpoint did not expose a release identifier, so the retrieval record, query specification, and content hash jointly identify that snapshot. The raw-source scripts reconstruct activity rows and pair rows from ChEMBL and BindingDB. Frozen pair CSVs are intentionally not redistributed in this lightweight repository.
+`DATA_MANIFEST.csv` records each public source, access route, local role, and redistribution status. `SOURCE_SNAPSHOT_MANIFEST.csv` binds the cached ChEMBL 36 and BindingDB inputs and derived pair tables to their retrieval date and SHA-256 hashes. ChEMBL 36 was the production release when the unversioned web service was queried on 18 May 2026; ChEMBL 37 was released publicly on 29 May 2026 and is used only by the separately identified historical-release replay. The BindingDB endpoint did not expose a release identifier, so the retrieval record, query specification, and content hash jointly identify that snapshot. The ChEMBL retrieval queries 23 retained MoleculeACE target/endpoint combinations, all Ki in the cached reconstruction, with pagination to exhaustion or a hard cap of 1,000 API activity rows per target; nine targets reach the cap. Pair construction then retains at most 550 ligands per target. The raw-source scripts reconstruct activity rows and pair rows from these declared snapshots. Frozen pair CSVs are intentionally not redistributed in this lightweight repository.
+
+## Leakage and Representation Audits
+
+`review_artifact/tables/raw_audit_15_fold_metrics.csv` contains the matched diagnostic rows for seeds 0--2 and folds 0--4. `raw_audit_15_summary.csv` is the eight-row summary used for the random-to-audited score-drop claim. This dedicated audit configuration is distinct from the canonical 25-run reference evaluation.
+
+`review_artifact/tables/representation_selection_42.csv` contains two sources by three split modes by seven representations. `representation_selection_changes_12.csv` compares the random-split winner with the audited-split winner in two sources by two audited splits by three metrics; 6/12 selections change. `representation_ranking_reversal_12.csv` evaluates all 21 pairwise orderings in each cell; 85/252 orderings reverse, yielding 33.73%.
 
 ## Level 3: Model Reruns
 
@@ -32,6 +38,8 @@ python scripts/run_tkde_lohi_leakage_splits.py --help
 ```
 
 `configs/reproduce_trans_top_journal_experiments.sh` documents the complete experiment sequence. Commands write new outputs rather than replacing the frozen tables.
+
+Official DataSAIL v1.3.0 audits use C2/ECFP, molecular entities on both sides, SCIP, five equal target folds, eight threads, and one optimizer run per configuration. Time limits are 120 seconds for 20/40 clusters and 300 seconds for 80 clusters. The 80-cluster status means that no accepted assignment was found within this budget; it is not a proof of mathematical infeasibility. LoHi-style pair partitions group rows by paired Bemis--Murcko scaffold pattern, while ligand partitions group individual ligands by Bemis--Murcko scaffold. Seeds 0--2 are greedily balanced across five folds by positive and total row counts before document-source purging.
 
 ## Biological-Unit Bootstrap
 

@@ -50,6 +50,8 @@ review_artifact/toolkit/generated/contract_audit_summary.json
 
 The frozen 39-row set includes same-contract LoHi boundary rows. Official DataSAIL assignments, stronger-input controls, label-assisted adaptation, reliability analyses, and auxiliary tasks are reported separately and are not counted in the 39-row summary.
 
+The headline random-versus-audited diagnostic is independently inspectable in `review_artifact/tables/raw_audit_15_summary.csv` and its 120 run-level rows. The representation-selection audit is exposed as a complete 42-row matrix plus two 12-row summaries. Across the 12 source--audited-split--metric comparisons, the selected representation changes in 6 cases, and 85 of 252 pairwise representation orderings reverse.
+
 ## Full Experiment Reproduction
 
 Full reproduction requires downloading the public source datasets and rebuilding pair rows and split definitions. The selected scripts in `scripts/` document the execution path used for the main benchmark components:
@@ -63,7 +65,7 @@ Full reproduction requires downloading the public source datasets and rebuilding
 - exact target-cluster membership: `export_target_cluster_membership.py`
 - publication figures: `draw_fig2_4.py`, `draw_fig5_7.py`, `draw_sfig1_6.py`, `draw_fig1_sfig7_sfig8.py`, and `draw_sfig9_fewshot_label_efficiency.py`
 
-The repository omits large raw data, pretrained embedding caches, conda environments, logs, and generated intermediate model files to remain lightweight. Frozen numerical figure sources remain available for direct inspection. Full figure regeneration follows the commands in `RESULT_MANIFEST.csv` after reconstructing the source table package. `REPRODUCIBILITY.md` distinguishes the quick contract audit from full data reconstruction and model reruns.
+The repository omits large raw data, pretrained embedding caches, conda environments, logs, and generated intermediate model files to remain lightweight. Frozen numerical figure sources remain available for direct inspection. Full figure regeneration follows the commands in `RESULT_MANIFEST.csv` after reconstructing the source table package. `REPRODUCIBILITY.md` distinguishes the quick contract audit from full data reconstruction and model reruns. The frozen ChEMBL reconstruction is a capped snapshot: retrieval stops at exhaustion or 1,000 activity rows per retained target, and pair construction then keeps at most 550 ligands per target.
 
 Set `PC_CFRL_DATA_ROOT` to the reconstructed experiment-data directory before running publication plotting scripts. Neural and transformer controls additionally require the exact PyTorch and Transformers versions recorded in `SOFTWARE_ENVIRONMENT.csv`; these optional heavy dependencies are not installed by the lightweight quick-check requirements.
 

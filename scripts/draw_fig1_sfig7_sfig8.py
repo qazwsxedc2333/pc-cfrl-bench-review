@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Draw Fig.1, SFig.7, and SFig.8 for the PC-CFRL-Bench package.
+"""Draw Fig.1, SFig.7, and SFig.8 for the PC-CFRL TKDE package.
 
 The figures follow the existing manuscript figure contract:
 - white background, Times New Roman, thin boxed axes/borders;
@@ -49,8 +49,8 @@ METHOD_COLORS = {
 }
 
 SPLIT_LABELS = {
-    "target_family": "target-family",
-    "family_scaffold_purged": "family+scaffold",
+    "target_family": "target-cluster",
+    "family_scaffold_purged": "target-cluster+scaffold",
     "bindingdb_to_chembl_pair_scaffold_purged": "BindingDB->ChEMBL\npair+scaffold",
     "chembl_to_bindingdb_pair_scaffold_purged": "ChEMBL->BindingDB\npair+scaffold",
     "chembl_future_after_2005_scaffold_source_purged": "future>2005\nscaffold+source",
@@ -206,7 +206,7 @@ def draw_fig1() -> None:
             "w": 0.205,
             "accent": PALETTE["negative"],
             "label": "Leakage contract",
-            "items": ["target family", "scaffold / ligand", "source / temporal", "overlap audit"],
+            "items": ["target cluster", "scaffold / ligand", "source / temporal", "overlap audit"],
         },
         {
             "x": 0.535,

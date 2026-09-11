@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Draw Fig.5--Fig.7 for the PC-CFRL-Bench manuscript.
+"""Draw Fig.5--Fig.7 for the PC-CFRL TKDE manuscript.
 
 Figure contracts following the local nature-figure workflow:
 - Fig.5 conclusion: reliability improves when PC-CFRL is evaluated under
@@ -19,7 +19,6 @@ from io import BytesIO
 from pathlib import Path
 import json
 import math
-import os
 import re
 from textwrap import shorten
 
@@ -60,10 +59,10 @@ METHOD = {
 NAME_MAP = {
     "chembl_raw": "ChEMBL",
     "bindingdb_raw": "BindingDB",
-    "family_scaffold_source_purged": "source+scaffold",
+    "family_scaffold_source_purged": "target-cluster+scaffold+source",
     "temporal_scaffold_source_purged": "temporal+source",
     "temporal_forward": "temporal",
-    "target_family": "target family",
+    "target_family": "target cluster",
     "ligand_cold": "cold ligand",
     "pair_scaffold_group": "pair scaffold",
     "document_source_group": "doc source",
@@ -78,7 +77,7 @@ NAME_MAP = {
     "high_margin": "high margin",
     "multi_source": "multi-source",
     "high_similarity": "high sim.",
-    "equal_relation_rebuilt": "equal-rel.",
+    "equal_relation_rebuilt": "exact relations only",
     "raw_chembl": "ChEMBL",
     "raw_bindingdb": "BindingDB",
 }
@@ -86,16 +85,14 @@ NAME_MAP = {
 
 def data_root() -> Path:
     here = Path(__file__).resolve()
-    configured = os.environ.get("PC_CFRL_DATA_ROOT")
-    candidates = ([Path(configured).expanduser()] if configured else []) + [
-        here.parent.parent / "data_remote",
+    candidates = [
+        here.parent.parent / "PC-CFRL_TKDE_trans_framework_20260607" / "data_remote",
+        Path(r"C:\codex_tmp\paper15_tkde_remote"),
     ]
     for cand in candidates:
         if (cand / "tkde_experiment_tables_2026_05_20").exists():
             return cand
-    raise FileNotFoundError(
-        "Set PC_CFRL_DATA_ROOT to the reconstructed experiment-data directory."
-    )
+    raise FileNotFoundError("Cannot locate remote table package.")
 
 
 def table_dir() -> Path:
@@ -103,7 +100,10 @@ def table_dir() -> Path:
 
 
 def extra_dir() -> Path:
-    return data_root() / "extra_csv"
+    root = data_root()
+    if (root / "extra_csv").exists():
+        return root / "extra_csv"
+    return Path(r"C:\codex_tmp\paper15_tkde_remote\extra_csv")
 
 
 def out_dir() -> Path:
@@ -198,7 +198,7 @@ def results_1_4_dir() -> Path:
     root = data_root()
     candidates = [
         root / "remote_1_4_experiments_20260611" / "results",
-        root / "results",
+        Path(r"C:\codex_tmp\paper15_tkde_remote\remote_1_4_experiments_20260611\results"),
     ]
     for cand in candidates:
         if cand.exists():
@@ -210,7 +210,7 @@ def results_5_7_dir() -> Path:
     root = data_root()
     candidates = [
         root / "remote_5_7_experiments_20260611" / "results",
-        root / "results",
+        Path(r"C:\codex_tmp\paper15_tkde_remote\remote_5_7_experiments_20260611\results"),
     ]
     for cand in candidates:
         if cand.exists():

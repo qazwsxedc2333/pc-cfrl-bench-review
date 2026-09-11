@@ -1,10 +1,10 @@
 benchmark,split_mode,n_splits,n_seeds,n_folds,n_rows,n_train,n_test,train_retention_after_purge,target_overlap_rate,exact_ligand_overlap_rate,scaffold_overlap_rate,exact_pair_overlap_rate,pair_scaffold_overlap_rate,family_overlap_rate,document_source_overlap_rate,assay_source_overlap_rate,train_max_year,test_min_year,row_label
-acnet,family_scaffold_purged,25,5,5,123054.0,90966.8,24610.8,0.9236,0.0,0.0,0.0,0.0,0.0,,,,,,ACNet | family+scaffold
-acnet,target_family,25,5,5,123054.0,98443.2,24610.8,1.0,0.0,0.115,0.1972,0.0267,0.1331,,,,,,ACNet | target-family
-bindingdb_raw,family_scaffold_source_purged,25,5,5,22484.0,16973.0,4496.8,0.945,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,-1.0,-1.0,BindingDB | source+scaffold
-bindingdb_raw,target_family,25,5,5,22484.0,17987.2,4496.8,1.0,0.0,0.0852,0.1938,0.0279,0.1318,,0.174,0.0,-1.0,-1.0,BindingDB | target-family
-chembl_raw,family_scaffold_source_purged,25,5,5,11885.0,9088.8,2377.0,0.9561,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,2021.4,1990.8,ChEMBL | source+scaffold
-chembl_raw,target_family,25,5,5,11885.0,9508.0,2377.0,1.0,0.0,0.0943,0.1314,0.0387,0.1071,,0.1199,0.0,2021.4,1990.8,ChEMBL | target-family
+acnet,family_scaffold_purged,25,5,5,123054.0,90966.8,24610.8,0.9236,0.0,0.0,0.0,0.0,0.0,,,,,,ACNet | target-cluster+scaffold
+acnet,target_family,25,5,5,123054.0,98443.2,24610.8,1.0,0.0,0.115,0.1972,0.0267,0.1331,,,,,,ACNet | target-cluster
+bindingdb_raw,family_scaffold_source_purged,25,5,5,22484.0,16973.0,4496.8,0.945,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,-1.0,-1.0,BindingDB | target-cluster+scaffold+source
+bindingdb_raw,target_family,25,5,5,22484.0,17987.2,4496.8,1.0,0.0,0.0852,0.1938,0.0279,0.1318,,0.174,0.0,-1.0,-1.0,BindingDB | target-cluster
+chembl_raw,family_scaffold_source_purged,25,5,5,11885.0,9088.8,2377.0,0.9561,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,2021.4,1990.8,ChEMBL | target-cluster+scaffold+source
+chembl_raw,target_family,25,5,5,11885.0,9508.0,2377.0,1.0,0.0,0.0943,0.1314,0.0387,0.1071,,0.1199,0.0,2021.4,1990.8,ChEMBL | target-cluster
 chembl_raw,temporal_scaffold_source_purged,25,5,5,11885.0,7903.2,2870.4,0.907,0.5563,0.0,0.0,0.0,0.0,,0.0,0.0,2009.0,2010.0,ChEMBL | temporal+source
-moleculeace,family_scaffold_purged,25,5,5,79749.0,61743.4,15949.8,0.968,0.0,0.0,0.0,0.0,0.0,0.0,,,,,MoleculeACE | family+scaffold
-moleculeace,target_family,25,5,5,79749.0,63799.2,15949.8,1.0,0.0,0.0902,0.1288,0.0434,0.098,0.0,,,,,MoleculeACE | target-family
+moleculeace,family_scaffold_purged,25,5,5,79749.0,61743.4,15949.8,0.968,0.0,0.0,0.0,0.0,0.0,0.0,,,,,MoleculeACE | target-cluster+scaffold
+moleculeace,target_family,25,5,5,79749.0,63799.2,15949.8,1.0,0.0,0.0902,0.1288,0.0434,0.098,0.0,,,,,MoleculeACE | target-cluster

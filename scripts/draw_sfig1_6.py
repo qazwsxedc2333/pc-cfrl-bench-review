@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Draw supplementary figures for the PC-CFRL-Bench manuscript.
+"""Draw all supplementary figures for the PC-CFRL TKDE manuscript.
 
 Figure contracts:
 - SFig.1: split construction and leakage predicates.
@@ -18,7 +18,6 @@ from __future__ import annotations
 from pathlib import Path
 import json
 import math
-import os
 import re
 from textwrap import shorten
 
@@ -59,11 +58,11 @@ METHOD_STYLE = {
 }
 
 SPLIT_NAME = {
-    "target_family": "target-family",
-    "family_scaffold_purged": "family+scaffold",
-    "family_scaffold_source_purged": "source+scaffold",
+    "target_family": "target-cluster",
+    "family_scaffold_purged": "target-cluster+scaffold",
+    "family_scaffold_source_purged": "target-cluster+scaffold+source",
     "temporal_scaffold_source_purged": "temporal+source",
-    "family_exact_ligand_purged": "family+ligand",
+    "family_exact_ligand_purged": "target-cluster+ligand",
     "lohi_ligand_scaffold_source_purged": "LoHi ligand",
     "lohi_pair_scaffold_source_purged": "LoHi pair",
     "bindingdb_to_chembl_scaffold_purged": "BDB->ChEMBL scaf.",
@@ -105,25 +104,23 @@ SHORT_BENCH_NAME = {
 }
 
 SHORT_SPLIT_NAME = {
-    "target_family": "tgt",
-    "family_scaffold_purged": "fam",
-    "family_scaffold_source_purged": "src",
+    "target_family": "t-clust.",
+    "family_scaffold_purged": "t-clust.+scaf.",
+    "family_scaffold_source_purged": "t-clust.+scaf.+src",
     "temporal_scaffold_source_purged": "tmp",
 }
 
 
 def data_root() -> Path:
     here = Path(__file__).resolve()
-    configured = os.environ.get("PC_CFRL_DATA_ROOT")
-    candidates = ([Path(configured).expanduser()] if configured else []) + [
-        here.parent.parent / "data_remote",
+    candidates = [
+        here.parent.parent / "PC-CFRL_TKDE_trans_framework_20260607" / "data_remote",
+        Path(r"C:\codex_tmp\paper15_tkde_remote"),
     ]
     for cand in candidates:
         if (cand / "tkde_experiment_tables_2026_05_20").exists():
             return cand
-    raise FileNotFoundError(
-        "Set PC_CFRL_DATA_ROOT to the reconstructed experiment-data directory."
-    )
+    raise FileNotFoundError("Cannot locate data_remote/tkde_experiment_tables_2026_05_20")
 
 
 def table_dir() -> Path:
@@ -131,7 +128,10 @@ def table_dir() -> Path:
 
 
 def extra_dir() -> Path:
-    return data_root() / "extra_csv"
+    root = data_root()
+    if (root / "extra_csv").exists():
+        return root / "extra_csv"
+    return Path(r"C:\codex_tmp\paper15_tkde_remote\extra_csv")
 
 
 def out_dir() -> Path:
@@ -250,7 +250,9 @@ def task_label(row: pd.Series) -> str:
     split = SPLIT_NAME.get(str(row.get("split_mode", "")), str(row.get("split_mode", "")))
     condition = str(row.get("condition", ""))
     if condition and condition not in {"default", "nan", "None"}:
-        condition = condition.replace("_", " ")
+        condition = {
+            "equal_relation_rebuilt": "exact relations only",
+        }.get(condition, condition.replace("_", " "))
         return f"{bench}\n{condition}"
     return f"{bench}\n{split}"
 
@@ -417,9 +419,9 @@ def draw_sfig2() -> None:
     panel_label(axes[2], "(c)")
 
     m = manifest.copy()
-    m["split_group"] = np.where(m["split_mode"].str.contains("purged"), "purged", "target-family")
+    m["split_group"] = np.where(m["split_mode"].str.contains("purged"), "purged", "target-cluster")
     m.loc[m["split_mode"].str.contains("temporal"), "split_group"] = "temporal"
-    groups = ["target-family", "purged", "temporal"]
+    groups = ["target-cluster", "purged", "temporal"]
     data = [m.loc[m["split_group"] == g, "train_retention_after_purge"].dropna().to_numpy(dtype=float) for g in groups]
     box = axes[3].boxplot(
         data,
@@ -573,7 +575,7 @@ def draw_sfig4() -> None:
     axes = axes.ravel()
     plt.subplots_adjust(left=0.105, right=0.985, top=0.955, bottom=0.16, wspace=0.30, hspace=0.42)
 
-    experiments = [("cross_database_transfer", "cross-database"), ("prospective_temporal", "prospective")]
+    experiments = [("cross_database_transfer", "cross-database"), ("prospective_temporal", "historical release")]
     source_records = []
     for col, (experiment, _) in enumerate(experiments):
         ax = axes[col]
@@ -642,7 +644,7 @@ def draw_condition_panel(
     show_xlabel: bool,
 ) -> None:
     order = ["all_pairs", "high_margin", "multi_source", "high_similarity", "equal_relation_rebuilt"]
-    labels = ["all", "high\nmargin", "multi\nsource", "high\nsim.", "equal\nrel."]
+    labels = ["all", "high\nmargin", "multi\nsource", "high\nsim.", "exact\nrelations"]
     sub = df[df["source"] == source].copy()
     for variant in ["ecfp_absdiff_xgb", "rich_diff_scalars", "rich_scalars_only"]:
         label, color, marker = METHOD_STYLE[variant]
