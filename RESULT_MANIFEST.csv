@@ -1,0 +1,10 @@
+result_id,manuscript_item,source_data,comparison_protocol,script,distributed_output
+contract_audit,Table S11 and 38/39 statement,Frozen leaderboard,Same dataset label metric ligand-pair input and split contract,reproduce_quick.py,review_artifact/toolkit/generated/contract_leaderboard_deltas.csv
+split_audit,Figure 2 and split tables,ACNet MoleculeACE ChEMBL BindingDB,Residual target ligand scaffold pair and provenance overlap,scripts/freeze_tkde_benchmark_splits.py,review_artifact/case_studies/tkde_benchmark_split_manifest.csv
+public_hard_ood,Public hard-OOD table,ACNet and MoleculeACE,Same-input ECFP-XGB versus PC-CFRL-full,scripts/run_moleculeace_target_family_pairs.py,review_artifact/tables/table_02_acnet_hard_ood_main.csv
+raw_source,Raw-source table,ChEMBL and BindingDB,Family scaffold and source-purged same-input comparison,scripts/run_chembl_raw_source_temporal_pairs.py,review_artifact/tables/table_03_raw_source_temporal_main.csv
+splitter_controls,Independent splitter table,ChEMBL and BindingDB,Official DataSAIL and LoHi boundary audits,scripts/run_official_datasail_exact_split.py,review_artifact/tables/table_16_official_datasail_exact_split.csv
+transfer,Figure 4 and transfer table,ChEMBL and BindingDB,Cross-database and historical-release evaluation,scripts/run_tkde_experiments_5_7.py,review_artifact/tables/table_05_crossdb_prospective_topk.csv
+reliability,Figure 5 and reliability tables,ACNet ChEMBL BindingDB,Calibration score-thresholded retention conformal and risk-coverage,scripts/run_tkde_raw_reliability.py,review_artifact/tables/table_06b_conformal_prediction.csv
+strong_controls,Strong-control table,ACNet MoleculeACE ChEMBL BindingDB,Same-input learner and stronger-input controls,scripts/run_tkde_unified_baseline_matrix.py,review_artifact/tables/table_10a_acnet_neural_controls.csv
+biological_bootstrap,Table S12,ChEMBL and BindingDB,Target and sequence-derived target-cluster bootstrap,scripts/run_target_unit_bootstrap.py,review_artifact/tables/table_18_biological_unit_bootstrap.csv
