@@ -381,9 +381,6 @@ def grouped_barh(ax: mpl.axes.Axes, df: pd.DataFrame, categories: list[str], xsc
                 linewidth=0.25,
                 zorder=3,
             )
-            for yi, is_valid in zip(y + offset, valid):
-                if not is_valid:
-                    ax.text(log_floor * 1.12, yi, "NA", color=color, fontsize=7.2, ha="left", va="center", zorder=4)
         else:
             ax.barh(
                 y + offset,
@@ -478,7 +475,7 @@ def draw_sfig2() -> None:
             linewidth=0,
         )
     axes[3].set_ylabel("train retention")
-    axes[3].set_ylim(0, 1.04)
+    axes[3].set_ylim(0.75, 1.02)
     axes[3].grid(axis="y", color=PALETTE["grid"], linewidth=0.35)
     set_box(axes[3])
     panel_label(axes[3], "(d)")

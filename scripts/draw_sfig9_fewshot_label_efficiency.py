@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Draw SFig.9 for the PC-CFRL-Bench supplement.
+"""Draw SFig.9 for the PC-CFRL TKDE supplement.
 
 The figure summarizes query-disjoint few-shot target-adaptation protocols from
 the 2026-06-15 fairness/active-learning runs. It keeps the existing manuscript
@@ -66,7 +66,8 @@ def boxed_axis(ax: mpl.axes.Axes) -> None:
         ax.spines[side].set_linewidth(0.45)
         ax.spines[side].set_color(PALETTE["border"])
     ax.tick_params(width=0.45, colors=PALETTE["border"])
-    ax.grid(axis="y", color=PALETTE["grid"], linewidth=0.35)
+    ax.set_axisbelow(True)
+    ax.grid(axis="y", color=PALETTE["grid"], linewidth=0.35, zorder=0)
 
 
 def panel_label(ax: mpl.axes.Axes, label: str) -> None:
@@ -96,6 +97,7 @@ def plot_metric(ax: mpl.axes.Axes, df: pd.DataFrame, benchmark: str, metric: str
             markeredgewidth=0.45,
             markeredgecolor=PALETTE["border"],
             label=name,
+            zorder=3,
         )
     ax.set_xlim(3, 52)
     ax.set_xticks([5, 10, 20, 30, 50])
